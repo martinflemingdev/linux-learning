@@ -1,0 +1,230 @@
+Linux Notes:
+
+  Basic Commands:
+
+    whatis: easy way to see what a command does
+
+    type: shows if its built-in or program
+
+    which: shows path to bin
+
+    sudo -i: simulates initial login as root
+
+    sudo -s: sign into root with shell specified in SHELL variable
+
+    uname -v: shows version of the kernel, "-r" shows release, "-a" shows all
+
+    cat /etc/os-release: shows OS information
+
+    more: shows text, can scroll with enter, space, r, backslash
+
+    less: shows text line by line
+    
+    man <command> : shows man page
+  
+  Hardware Commands:
+
+    dmesg: device message, displays messages from RingBuffer of kernel since startup
+
+    udevadm monitor: prints received events around device configuration (USB plugged in and out) 
+
+    lspci: list PCI decices configured in the system (peripheral component interconnect)
+
+    lsblk: 
+      def: lists block storage devices and partitions, MAJ:MIN numbers correspond to specific device type 
+      1: RAM
+      3: HARD DISK or CD ROM
+      6: PARALLEL PRINTERS
+      8: SCSI DISK
+
+    lscpu: 
+      def: displays info about CPU Architecture
+      32-bit: 2^32 = 4 GiB
+      64-bit: 2^64 = 18 EB
+      Socket: physical slot on motherboard where CPU can be inserted
+      Core: Per socket cores with threads
+      Thread: Per Core threads that can run simutaneously
+      Virtual-CPUs: Sockets X Cores X Threads = CPUs (parralle threads at a time)
+
+    lsmem: list available memory, with --summary flag excludes RANGE
+
+    free:
+      def: another memory command, shows MEM and SWAP values
+      -m : display in MiB
+      -k : in KiB
+      -g : in GiB
+
+    lshw: shows in depth hardware configuration
+
+    df -hP: prints out all the mounted file systems
+
+  Linux Boot Sequence:
+
+    1. BIOS POST (Power-On Self Test): BIOS runs POST test to assure hardware works and functioning correctly
+
+    2. Boot Loader (GRUB2): BIOS boots which OS to start, loads selected Kernel into the memory from /boot drive
+
+    3. Kernel Initialization: kernel is decompressed and begins tasks and eventually starts INIT
+
+    4. INIT Process (systemd): INIT calls systemd daemon to beings services in parrallel
+
+    ls -l /sbin/init: shows which init is being used systemd VS sysV 
+
+  Runlevels: 
+
+    def: determines graphical VS cli run type, checked at INIT process level
+
+    systemd: runlevels are called targets
+
+    runlevel 0 : poweroff.target
+
+    runlevel 1 : rescue.target
+
+    runlevel 2 : multi-user.target
+
+    runlevel 3 : multi-user.target
+
+    runlevel 4 : multi-user.target
+
+    runlevel 5 : graphical.target
+
+    runlevel 6 : reboot.target
+
+    systemctl get-default: get's default target
+
+    systemctl set-default muti-user.target: swtiches run level from 5 to 3
+
+  File-Types:
+
+    1. Regular: text files
+
+    2. Directory: stores other files
+
+    3. Special:
+
+      1. Character Files: /dev files for devices like mouse and keyboard
+
+      2. Block Files: /dev files dealing with storage, RAM
+
+      3. Links: 
+
+          def: associate 2 or more file names with the same file data
+
+          1. Hard Link: Point to same data, deleting one link will delete the data
+
+          2. Soft Link or Sym-link: Pointer (or shortcut) to a file, deleting it will not delete the file
+
+      4. Socket: special file that enables the communication between 2 processes
+
+      5. Named Pipes: allows connecting one process as the input to another
+
+    file command: can run "file <file path>" to determine what kind of file it is
+
+    ls -l: 
+    
+      def: first letter also shows file type
+
+      d: Directory
+      "-": regular file
+      c: character file
+      l: link file
+      s: socket file
+      p: pipe file
+      b: block file
+
+  Filesystem Hierarchy:
+
+    /: root
+
+    /bin: basic binary programs like cp, mv, grep, sed, awk ... live here
+
+    /boot: boot code for OS
+
+    /dev: contains special block and character (driver) files for devices like Mouse/Keyboard and external hard disks
+
+    /etc: stores configuration files 
+
+    /home: contains user directories ( except root user which is /root )
+
+    /lib: place for shared libraries
+
+    /media: all external media (like USB drive) is mounted here
+
+    /mnt: used to mount filesystems temporarily in the system
+
+    /opt: place to install 3rd party programs
+
+    /root: root user home director
+
+    /tmp: temp storage for data
+
+    /usr: older system home directory, today is where user apps and data lives
+
+    /var: directory where system writes logs and cached data
+
+  Package Managment:
+
+    def: Software that helps installs packages by verifing integrity/authentiticy, simplifying management, groups packages and manages dependencies
+
+    DPKG / APT (newer DPKG) / APT-GET: Debian / Ubuntu / Linux Mint / Arch Linux / PureOS are "DEB Based Distros"
+
+    RPM / YUM / DNF: Red Hat Enterprise Linux (RHEL) / CentOS / Fedora / Amazon Linux are "RPM Based Distros"
+
+    Red-Hat Package Manager (RPM): 
+
+      def:                low level package manager
+      dependency:         does not honor dependencies, will fail 
+
+      commands:
+        install:          rpm -ivh telnet.rpm
+        uninstall:        rmp -e telnet.rpm
+        upgrade:          rmp -Uvh telnet.rpm
+        query:            rpm -q telnet.rpm
+        verify:           rpm -Vf <path to file>
+
+    Yellow-Dog Updater Manager (YUM):
+
+      def:                high level package manager using RPM under the hood
+      dependency:         automatic dependency resolution
+      repositories:       uses software repos to install RPM packages and dependencies
+
+      commands:
+        install:          yum install httpd -y (gives transaction summary, -y answers yes to install question)
+        repos:            yum repolist - shows all repos on this system
+        provides:         yum provides scp (shows what repo provides the package to run the command)
+        remove:           yum remove httpd
+        update package:   yum update telnet
+        update all:       yum update
+
+    Debian Package Manager (DPKG):
+
+      def:                low level package manager
+      dependency:         does not honor dependencies, will fail 
+
+      commands: 
+        install:          dpkg -i telnet.deb
+        uninstall:        dpkg -r telnet.deb
+        list:             dpkg -l telnet
+        status:           dpkg -s telnet
+        verify:           dpkg -p <path to file>
+
+    Advanced Package Tool (APT) more user friendly than APT-GET: 
+
+      Def:                high level package manager
+      dependency:         automatic dependency resolution
+      repositories:       uses software repos to install DPKG packages and dependencies defined in /etc/apt/sources.list
+      
+      commands:
+        update:           apt update  (updates after starting OS)
+        upgrade:          apt upgrade (upgrades packages after adding sources)
+        sources:          apt edit-sources - opens /etc/apt/sources.list to edit
+        install:          apt install telnet
+        remove:           apt remove telnet
+        list:             apt list | grep telnet
+        search:           apt search telnet
+
+  Linux Distributions:
+
+    RHEL: Enterprise Offering, Paid Version, Technical Support
+
+    Centos: Community Version of RHEL, Free Version, Community Support

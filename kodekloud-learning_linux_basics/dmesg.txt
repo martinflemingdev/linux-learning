@@ -1,0 +1,2131 @@
+[    0.000000] Linux version 6.6.6-76060606-generic (jenkins@warp.pop-os.org) (x86_64-linux-gnu-gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04) 12.3.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #202312111032~1702306143~22.04~d28ffec SMP PREEMPT_DYNAMIC Mon D
+[    0.000000] Command line: initrd=\EFI\Pop_OS-e236a917-c33d-47f4-95b5-7d8e1b09698a\initrd.img root=UUID=e236a917-c33d-47f4-95b5-7d8e1b09698a ro quiet loglevel=0 systemd.show_status=false splash
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai  
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009f000-0x00000000000bffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x0000000009beffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000009bf0000-0x0000000009dfffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000009e00000-0x0000000009efffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000009f00000-0x0000000009f0efff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x0000000009f0f000-0x00000000c6f7efff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000c6f7f000-0x00000000ccf7efff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ccf7f000-0x00000000cdf7efff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000cdf7f000-0x00000000cdffefff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000cdfff000-0x00000000cdffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000ce000000-0x00000000cfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fdc00000-0x00000000fdcfffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fe000000-0x00000000fe0fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec01fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec10000-0x00000000fec10fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec20000-0x00000000fec20fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed80000-0x00000000fed81fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000100e2fffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000100e300000-0x000000102fffffff] reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] e820: update [mem 0xb3478018-0xb3485857] usable ==> usable
+[    0.000000] e820: update [mem 0xb3478018-0xb3485857] usable ==> usable
+[    0.000000] extended physical RAM map:
+[    0.000000] reserve setup_data: [mem 0x0000000000000000-0x000000000009efff] usable
+[    0.000000] reserve setup_data: [mem 0x000000000009f000-0x00000000000bffff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000000100000-0x0000000009beffff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000009bf0000-0x0000000009dfffff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000009e00000-0x0000000009efffff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000009f00000-0x0000000009f0efff] ACPI NVS
+[    0.000000] reserve setup_data: [mem 0x0000000009f0f000-0x00000000b3478017] usable
+[    0.000000] reserve setup_data: [mem 0x00000000b3478018-0x00000000b3485857] usable
+[    0.000000] reserve setup_data: [mem 0x00000000b3485858-0x00000000c6f7efff] usable
+[    0.000000] reserve setup_data: [mem 0x00000000c6f7f000-0x00000000ccf7efff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000ccf7f000-0x00000000cdf7efff] ACPI NVS
+[    0.000000] reserve setup_data: [mem 0x00000000cdf7f000-0x00000000cdffefff] ACPI data
+[    0.000000] reserve setup_data: [mem 0x00000000cdfff000-0x00000000cdffffff] usable
+[    0.000000] reserve setup_data: [mem 0x00000000ce000000-0x00000000cfffffff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000fdc00000-0x00000000fdcfffff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000fe000000-0x00000000fe0fffff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000fec00000-0x00000000fec01fff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000fec10000-0x00000000fec10fff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000fec20000-0x00000000fec20fff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000fed80000-0x00000000fed81fff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000100000000-0x000000100e2fffff] usable
+[    0.000000] reserve setup_data: [mem 0x000000100e300000-0x000000102fffffff] reserved
+[    0.000000] efi: EFI v2.7 by INSYDE Corp.
+[    0.000000] efi: ACPI=0xcdffe000 ACPI 2.0=0xcdffe014 TPMFinalLog=0xcdf40000 ESRT=0xcb862798 SMBIOS=0xcb69d000 SMBIOS 3.0=0xcb69b000 MEMATTR=0xb34ef018 INITRD=0xb3486c98 RNG=0xcdfe1018 TPMEventLog=0xb3511018 
+[    0.000000] random: crng init done
+[    0.000000] efi: Remove mem60: MMIO range=[0xf8000000-0xfbffffff] (64MB) from e820 map
+[    0.000000] e820: remove [mem 0xf8000000-0xfbffffff] reserved
+[    0.000000] efi: Remove mem61: MMIO range=[0xfdc00000-0xfdcfffff] (1MB) from e820 map
+[    0.000000] e820: remove [mem 0xfdc00000-0xfdcfffff] reserved
+[    0.000000] efi: Remove mem62: MMIO range=[0xfe000000-0xfe0fffff] (1MB) from e820 map
+[    0.000000] e820: remove [mem 0xfe000000-0xfe0fffff] reserved
+[    0.000000] efi: Not removing mem63: MMIO range=[0xfec00000-0xfec01fff] (8KB) from e820 map
+[    0.000000] efi: Not removing mem64: MMIO range=[0xfec10000-0xfec10fff] (4KB) from e820 map
+[    0.000000] efi: Not removing mem65: MMIO range=[0xfec20000-0xfec20fff] (4KB) from e820 map
+[    0.000000] efi: Not removing mem66: MMIO range=[0xfed80000-0xfed81fff] (8KB) from e820 map
+[    0.000000] efi: Not removing mem67: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+[    0.000000] efi: Remove mem68: MMIO range=[0xff000000-0xffffffff] (16MB) from e820 map
+[    0.000000] e820: remove [mem 0xff000000-0xffffffff] reserved
+[    0.000000] SMBIOS 3.3.0 present.
+[    0.000000] DMI: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.000000] tsc: Detected 1896.531 MHz processor
+[    0.000355] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000356] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000362] last_pfn = 0x100e300 max_arch_pfn = 0x400000000
+[    0.000369] MTRR map: 8 entries (4 fixed + 4 variable; max 21), built from 9 variable MTRRs
+[    0.000371] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.000703] last_pfn = 0xce000 max_arch_pfn = 0x400000000
+[    0.004198] esrt: Reserving ESRT space from 0x00000000cb862798 to 0x00000000cb8627d0.
+[    0.004207] Using GB pages for direct mapping
+[    0.004892] Secure boot disabled
+[    0.004892] RAMDISK: [mem 0x78a15000-0x7fffffff]
+[    0.004898] ACPI: Early table checksum verification disabled
+[    0.004901] ACPI: RSDP 0x00000000CDFFE014 000024 (v02 HPQOEM)
+[    0.004905] ACPI: XSDT 0x00000000CDFC6188 000114 (v01 HPQOEM SLIC-MPC 00000002 HP   01000013)
+[    0.004910] ACPI: FACP 0x00000000CDFE5000 00010C (v05 HPQOEM SLIC-MPC 00000002 HP   00040000)
+[    0.004914] ACPI: DSDT 0x00000000CDFD7000 007CEF (v01 HPQOEM SLIC-MPC 00000002 HP   00040000)
+[    0.004916] ACPI: FACS 0x00000000CDEB7000 000040
+[    0.004917] ACPI: UEFI 0x00000000CDF7E000 000236 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004919] ACPI: SSDT 0x00000000CDFFC000 000217 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004921] ACPI: SSDT 0x00000000CDFF4000 0072B0 (v02 HPQOEM 0000     00000002 HP   00040000)
+[    0.004923] ACPI: IVRS 0x00000000CDFF3000 0001A4 (v02 HPQOEM 0000     00000001 HP   00040000)
+[    0.004925] ACPI: SSDT 0x00000000CDFF2000 00077B (v02 HPQOEM 0000     00001000 HP   00040000)
+[    0.004926] ACPI: TPM2 0x00000000CDFF1000 00004C (v04 HPQOEM 0000     00000002 HP   00040000)
+[    0.004928] ACPI: SSDT 0x00000000CDFF0000 00017D (v01 HPQOEM 0000     00001000 HP   00040000)
+[    0.004930] ACPI: SSDT 0x00000000CDFE9000 0066F3 (v01 HPQOEM 0000     00001000 HP   00040000)
+[    0.004932] ACPI: ASF! 0x00000000CDFE7000 0000A5 (v32 HPQOEM 0000     00000002 HP   00040000)
+[    0.004934] ACPI: BOOT 0x00000000CDFE6000 000028 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.004935] ACPI: HPET 0x00000000CDFE4000 000038 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.004937] ACPI: APIC 0x00000000CDFE3000 000138 (v03 HPQOEM SLIC-MPC 00000002 HP   00040000)
+[    0.004939] ACPI: MCFG 0x00000000CDFE2000 00003C (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.004941] ACPI: WDAT 0x00000000CDFE0000 00017C (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.004942] ACPI: WDRT 0x00000000CDFDF000 000047 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.004944] ACPI: SSDT 0x00000000CDFD6000 000164 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.004946] ACPI: SSDT 0x00000000CDFD5000 000099 (v01 HPQOEM 0000     00000002 HP   00040000)
+[    0.004948] ACPI: VFCT 0x00000000CDFC7000 00D884 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004950] ACPI: SSDT 0x00000000CDFFD000 0000F8 (v01 HPQOEM 0000     00001000 HP   00040000)
+[    0.004951] ACPI: SSDT 0x00000000CDFC0000 005354 (v02 HPQOEM 0000     00000001 HP   00040000)
+[    0.004953] ACPI: CRAT 0x00000000CDFBF000 000EE8 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004955] ACPI: CDIT 0x00000000CDFBE000 000029 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004957] ACPI: SSDT 0x00000000CDFBD000 000149 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004958] ACPI: SSDT 0x00000000CDFBC000 0003DB (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004960] ACPI: SSDT 0x00000000CDFB8000 0036D0 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004962] ACPI: FPDT 0x00000000CDFB7000 000044 (v01 HPQOEM SLIC-MPC 00000002 HP   00040000)
+[    0.004964] ACPI: BGRT 0x00000000CDFB6000 000038 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004965] ACPI: WSMT 0x00000000CDFB5000 000028 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004967] ACPI: SSDT 0x00000000CDFB4000 000834 (v01 HPQOEM 0000     00000001 HP   00040000)
+[    0.004969] ACPI: Reserving FACP table memory at [mem 0xcdfe5000-0xcdfe510b]
+[    0.004970] ACPI: Reserving DSDT table memory at [mem 0xcdfd7000-0xcdfdecee]
+[    0.004970] ACPI: Reserving FACS table memory at [mem 0xcdeb7000-0xcdeb703f]
+[    0.004971] ACPI: Reserving UEFI table memory at [mem 0xcdf7e000-0xcdf7e235]
+[    0.004971] ACPI: Reserving SSDT table memory at [mem 0xcdffc000-0xcdffc216]
+[    0.004972] ACPI: Reserving SSDT table memory at [mem 0xcdff4000-0xcdffb2af]
+[    0.004972] ACPI: Reserving IVRS table memory at [mem 0xcdff3000-0xcdff31a3]
+[    0.004973] ACPI: Reserving SSDT table memory at [mem 0xcdff2000-0xcdff277a]
+[    0.004973] ACPI: Reserving TPM2 table memory at [mem 0xcdff1000-0xcdff104b]
+[    0.004974] ACPI: Reserving SSDT table memory at [mem 0xcdff0000-0xcdff017c]
+[    0.004974] ACPI: Reserving SSDT table memory at [mem 0xcdfe9000-0xcdfef6f2]
+[    0.004975] ACPI: Reserving ASF! table memory at [mem 0xcdfe7000-0xcdfe70a4]
+[    0.004975] ACPI: Reserving BOOT table memory at [mem 0xcdfe6000-0xcdfe6027]
+[    0.004976] ACPI: Reserving HPET table memory at [mem 0xcdfe4000-0xcdfe4037]
+[    0.004977] ACPI: Reserving APIC table memory at [mem 0xcdfe3000-0xcdfe3137]
+[    0.004977] ACPI: Reserving MCFG table memory at [mem 0xcdfe2000-0xcdfe203b]
+[    0.004978] ACPI: Reserving WDAT table memory at [mem 0xcdfe0000-0xcdfe017b]
+[    0.004978] ACPI: Reserving WDRT table memory at [mem 0xcdfdf000-0xcdfdf046]
+[    0.004979] ACPI: Reserving SSDT table memory at [mem 0xcdfd6000-0xcdfd6163]
+[    0.004979] ACPI: Reserving SSDT table memory at [mem 0xcdfd5000-0xcdfd5098]
+[    0.004980] ACPI: Reserving VFCT table memory at [mem 0xcdfc7000-0xcdfd4883]
+[    0.004980] ACPI: Reserving SSDT table memory at [mem 0xcdffd000-0xcdffd0f7]
+[    0.004981] ACPI: Reserving SSDT table memory at [mem 0xcdfc0000-0xcdfc5353]
+[    0.004981] ACPI: Reserving CRAT table memory at [mem 0xcdfbf000-0xcdfbfee7]
+[    0.004982] ACPI: Reserving CDIT table memory at [mem 0xcdfbe000-0xcdfbe028]
+[    0.004982] ACPI: Reserving SSDT table memory at [mem 0xcdfbd000-0xcdfbd148]
+[    0.004983] ACPI: Reserving SSDT table memory at [mem 0xcdfbc000-0xcdfbc3da]
+[    0.004983] ACPI: Reserving SSDT table memory at [mem 0xcdfb8000-0xcdfbb6cf]
+[    0.004984] ACPI: Reserving FPDT table memory at [mem 0xcdfb7000-0xcdfb7043]
+[    0.004985] ACPI: Reserving BGRT table memory at [mem 0xcdfb6000-0xcdfb6037]
+[    0.004985] ACPI: Reserving WSMT table memory at [mem 0xcdfb5000-0xcdfb5027]
+[    0.004986] ACPI: Reserving SSDT table memory at [mem 0xcdfb4000-0xcdfb4833]
+[    0.005129] No NUMA configuration found
+[    0.005130] Faking a node at [mem 0x0000000000000000-0x000000100e2fffff]
+[    0.005138] NODE_DATA(0) allocated [mem 0x100e2d5000-0x100e2fffff]
+[    0.005308] Zone ranges:
+[    0.005309]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.005310]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.005311]   Normal   [mem 0x0000000100000000-0x000000100e2fffff]
+[    0.005312]   Device   empty
+[    0.005313] Movable zone start for each node
+[    0.005314] Early memory node ranges
+[    0.005315]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.005316]   node   0: [mem 0x0000000000100000-0x0000000009beffff]
+[    0.005316]   node   0: [mem 0x0000000009e00000-0x0000000009efffff]
+[    0.005317]   node   0: [mem 0x0000000009f0f000-0x00000000c6f7efff]
+[    0.005318]   node   0: [mem 0x00000000cdfff000-0x00000000cdffffff]
+[    0.005318]   node   0: [mem 0x0000000100000000-0x000000100e2fffff]
+[    0.005323] Initmem setup node 0 [mem 0x0000000000001000-0x000000100e2fffff]
+[    0.005326] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.005338] On node 0, zone DMA: 97 pages in unavailable ranges
+[    0.005438] On node 0, zone DMA32: 528 pages in unavailable ranges
+[    0.008829] On node 0, zone DMA32: 15 pages in unavailable ranges
+[    0.009014] On node 0, zone DMA32: 28800 pages in unavailable ranges
+[    0.084540] On node 0, zone Normal: 8192 pages in unavailable ranges
+[    0.084612] On node 0, zone Normal: 7424 pages in unavailable ranges
+[    0.084725] ACPI: PM-Timer IO Port: 0x408
+[    0.084733] ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+[    0.084734] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.084735] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.084735] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.084736] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.084736] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.084737] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.084737] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.084738] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.084738] ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+[    0.084739] ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+[    0.084739] ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+[    0.084740] ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+[    0.084740] ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+[    0.084741] ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+[    0.084741] ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+[    0.084754] IOAPIC[0]: apic_id 33, version 33, address 0xfec00000, GSI 0-23
+[    0.084759] IOAPIC[1]: apic_id 34, version 33, address 0xfec01000, GSI 24-55
+[    0.084760] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.084762] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+[    0.084766] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.084767] ACPI: HPET id: 0x10228210 base: 0xfed00000
+[    0.084774] e820: update [mem 0xb34f2000-0xb3505fff] usable ==> reserved
+[    0.084785] smpboot: Allowing 16 CPUs, 0 hotplug CPUs
+[    0.084801] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.084802] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000bffff]
+[    0.084803] PM: hibernation: Registered nosave memory: [mem 0x000c0000-0x000fffff]
+[    0.084804] PM: hibernation: Registered nosave memory: [mem 0x09bf0000-0x09dfffff]
+[    0.084805] PM: hibernation: Registered nosave memory: [mem 0x09f00000-0x09f0efff]
+[    0.084806] PM: hibernation: Registered nosave memory: [mem 0xb3478000-0xb3478fff]
+[    0.084807] PM: hibernation: Registered nosave memory: [mem 0xb3485000-0xb3485fff]
+[    0.084808] PM: hibernation: Registered nosave memory: [mem 0xb34f2000-0xb3505fff]
+[    0.084809] PM: hibernation: Registered nosave memory: [mem 0xc6f7f000-0xccf7efff]
+[    0.084810] PM: hibernation: Registered nosave memory: [mem 0xccf7f000-0xcdf7efff]
+[    0.084810] PM: hibernation: Registered nosave memory: [mem 0xcdf7f000-0xcdffefff]
+[    0.084811] PM: hibernation: Registered nosave memory: [mem 0xce000000-0xcfffffff]
+[    0.084812] PM: hibernation: Registered nosave memory: [mem 0xd0000000-0xfebfffff]
+[    0.084812] PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec01fff]
+[    0.084813] PM: hibernation: Registered nosave memory: [mem 0xfec02000-0xfec0ffff]
+[    0.084813] PM: hibernation: Registered nosave memory: [mem 0xfec10000-0xfec10fff]
+[    0.084814] PM: hibernation: Registered nosave memory: [mem 0xfec11000-0xfec1ffff]
+[    0.084814] PM: hibernation: Registered nosave memory: [mem 0xfec20000-0xfec20fff]
+[    0.084815] PM: hibernation: Registered nosave memory: [mem 0xfec21000-0xfed7ffff]
+[    0.084815] PM: hibernation: Registered nosave memory: [mem 0xfed80000-0xfed81fff]
+[    0.084816] PM: hibernation: Registered nosave memory: [mem 0xfed82000-0xfedfffff]
+[    0.084816] PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    0.084817] PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xffffffff]
+[    0.084818] [mem 0xd0000000-0xfebfffff] available for PCI devices
+[    0.084819] Booting paravirtualized kernel on bare hardware
+[    0.084821] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.084828] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+[    0.085577] percpu: Embedded 84 pages/cpu s221184 r8192 d114688 u524288
+[    0.085582] pcpu-alloc: s221184 r8192 d114688 u524288 alloc=1*2097152
+[    0.085584] pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+[    0.085588] pcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 15 
+[    0.085607] Kernel command line: initrd=\EFI\Pop_OS-e236a917-c33d-47f4-95b5-7d8e1b09698a\initrd.img root=UUID=e236a917-c33d-47f4-95b5-7d8e1b09698a ro quiet loglevel=0 systemd.show_status=false splash
+[    0.085686] Unknown kernel command line parameters "splash", will be passed to user space.
+[    0.090581] Dentry cache hash table entries: 8388608 (order: 14, 67108864 bytes, linear)
+[    0.092967] Inode-cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+[    0.093017] Fallback order for Node 0: 0 
+[    0.093022] Built 1 zonelists, mobility grouping on.  Total pages: 16341535
+[    0.093023] Policy zone: Normal
+[    0.093030] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.093073] software IO TLB: area num 16.
+[    0.200012] Memory: 64922060K/66404348K available (20480K kernel code, 4383K rwdata, 13244K rodata, 4812K init, 4968K bss, 1482032K reserved, 0K cma-reserved)
+[    0.200687] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+[    0.200710] ftrace: allocating 55434 entries in 217 pages
+[    0.211567] ftrace: allocated 217 pages with 5 groups
+[    0.212299] Dynamic Preempt: voluntary
+[    0.212366] rcu: Preemptible hierarchical RCU implementation.
+[    0.212367] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+[    0.212368] 	Trampoline variant of Tasks RCU enabled.
+[    0.212368] 	Rude variant of Tasks RCU enabled.
+[    0.212368] 	Tracing variant of Tasks RCU enabled.
+[    0.212369] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.212370] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+[    0.214366] NR_IRQS: 524544, nr_irqs: 1096, preallocated irqs: 16
+[    0.214560] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.214630] Console: colour dummy device 80x25
+[    0.214632] printk: console [tty0] enabled
+[    0.214669] ACPI: Core revision 20230628
+[    0.214861] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484873504 ns
+[    0.214878] APIC: Switch to symmetric I/O mode setup
+[    0.215710] AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR0, rdevid:160
+[    0.215712] AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR1, rdevid:160
+[    0.215712] AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR2, rdevid:160
+[    0.215713] AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR3, rdevid:160
+[    0.215714] AMD-Vi: Using global IVHD EFR:0x206d73ef22254ade, EFR2:0x0
+[    0.216005] APIC: Switched APIC routing to: physical flat
+[    0.216747] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.234883] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x36acbda9cfa, max_idle_ns: 881590658463 ns
+[    0.234889] Calibrating delay loop (skipped), value calculated using timer frequency.. 3793.06 BogoMIPS (lpj=7586124)
+[    0.234911] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[    0.234946] LVT offset 1 assigned for vector 0xf9
+[    0.235055] LVT offset 2 assigned for vector 0xf4
+[    0.235080] process: using mwait in idle threads
+[    0.235082] Last level iTLB entries: 4KB 512, 2MB 512, 4MB 256
+[    0.235083] Last level dTLB entries: 4KB 2048, 2MB 2048, 4MB 1024, 1GB 0
+[    0.235086] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.235088] Spectre V2 : Mitigation: Retpolines
+[    0.235089] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.235089] Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+[    0.235090] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.235091] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.235092] Spectre V2 : User space: Mitigation: STIBP always-on protection
+[    0.235094] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[    0.235095] Speculative Return Stack Overflow: IBPB-extending microcode not applied!
+[    0.235096] Speculative Return Stack Overflow: WARNING: See https://kernel.org/doc/html/latest/admin-guide/hw-vuln/srso.html for mitigation options.
+[    0.235097] Speculative Return Stack Overflow: Vulnerable: Safe RET, no microcode
+[    0.235102] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.235104] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.235104] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.235105] x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+[    0.235106] x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+[    0.235107] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.235108] x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8
+[    0.235108] x86/fpu: xstate_offset[11]:  840, xstate_sizes[11]:   16
+[    0.235109] x86/fpu: Enabled xstate features 0xa07, context size is 856 bytes, using 'compacted' format.
+[    0.259613] Freeing SMP alternatives memory: 44K
+[    0.259616] pid_max: default: 32768 minimum: 301
+[    0.262936] LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,integrity
+[    0.262961] landlock: Up and running.
+[    0.262962] Yama: becoming mindful.
+[    0.262984] AppArmor: AppArmor initialized
+[    0.263100] Mount-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.263168] Mountpoint-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.378277] smpboot: CPU0: AMD Ryzen 7 PRO 5850U with Radeon Graphics (family: 0x19, model: 0x50, stepping: 0x0)
+[    0.378460] RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+[    0.378479] RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+[    0.378497] RCU Tasks Trace: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1.
+[    0.378511] Performance Events: Fam17h+ core perfctr, AMD PMU driver.
+[    0.378518] ... version:                0
+[    0.378519] ... bit width:              48
+[    0.378520] ... generic registers:      6
+[    0.378521] ... value mask:             0000ffffffffffff
+[    0.378522] ... max period:             00007fffffffffff
+[    0.378523] ... fixed-purpose events:   0
+[    0.378524] ... event mask:             000000000000003f
+[    0.378609] signal: max sigframe size: 3376
+[    0.378645] rcu: Hierarchical SRCU implementation.
+[    0.378646] rcu: 	Max phase no-delay instances is 1000.
+[    0.378885] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.378885] smp: Bringing up secondary CPUs ...
+[    0.378885] smpboot: x86: Booting SMP configuration:
+[    0.378885] .... node  #0, CPUs:        #2  #4  #6  #8 #10 #12 #14  #1  #3  #5  #7  #9 #11 #13 #15
+[    0.398893] Spectre V2 : Update user space SMT mitigation: STIBP always-on
+[    0.412886] smp: Brought up 1 node, 16 CPUs
+[    0.412886] smpboot: Max logical packages: 1
+[    0.412886] smpboot: Total of 16 processors activated (60688.99 BogoMIPS)
+[    0.415970] devtmpfs: initialized
+[    0.415970] x86/mm: Memory block size: 2048MB
+[    0.415970] ACPI: PM: Registering ACPI NVS region [mem 0x09f00000-0x09f0efff] (61440 bytes)
+[    0.415970] ACPI: PM: Registering ACPI NVS region [mem 0xccf7f000-0xcdf7efff] (16777216 bytes)
+[    0.415970] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.415970] futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+[    0.415970] pinctrl core: initialized pinctrl subsystem
+[    0.415970] PM: RTC time: 20:30:19, date: 2024-01-20
+[    0.415970] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.418925] DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+[    0.419117] DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.419335] DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.419345] audit: initializing netlink subsys (disabled)
+[    0.419360] audit: type=2000 audit(1705782619.204:1): state=initialized audit_enabled=0 res=1
+[    0.419360] thermal_sys: Registered thermal governor 'fair_share'
+[    0.419360] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.419360] thermal_sys: Registered thermal governor 'step_wise'
+[    0.419360] thermal_sys: Registered thermal governor 'user_space'
+[    0.419360] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.419360] EISA bus registered
+[    0.419360] cpuidle: using governor ladder
+[    0.419360] cpuidle: using governor menu
+[    0.419360] Simple Boot Flag at 0x44 set to 0x1
+[    0.419360] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.419360] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.419360] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+[    0.419360] PCI: not using MMCONFIG
+[    0.419360] PCI: Using configuration type 1 for base access
+[    0.419360] PCI: Using configuration type 1 for extended access
+[    0.419725] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.422954] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.422954] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.422954] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.422954] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.423047] ACPI: Added _OSI(Module Device)
+[    0.423049] ACPI: Added _OSI(Processor Device)
+[    0.423051] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.423052] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.443247] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.GP17.AZAL], AE_NOT_FOUND (20230628/dswload2-162)
+[    0.443258] ACPI Error: AE_NOT_FOUND, During name lookup/catalog (20230628/psobject-220)
+[    0.443261] ACPI: Skipping parse of AML opcode: Scope (0x0010)
+[    0.443566] ACPI: 14 ACPI AML tables successfully acquired and loaded
+[    0.446386] ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[    0.453365] ACPI: _OSC evaluation for CPUs failed, trying _PDC
+[    0.453365] ACPI: EC: EC started
+[    0.453365] ACPI: EC: interrupt blocked
+[    0.457145] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.457148] ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC used to handle transactions
+[    0.457149] ACPI: Interpreter enabled
+[    0.458887] ACPI: PM: (supports S0 S3 S4 S5)
+[    0.458887] ACPI: Using IOAPIC for interrupt routing
+[    0.458887] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+[    0.461494] [Firmware Info]: PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] not reserved in ACPI motherboard resources
+[    0.461498] PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved as EfiMemoryMappedIO
+[    0.461506] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.461507] PCI: Using E820 reservations for host bridge windows
+[    0.462007] ACPI: Enabled 5 GPEs in block 00 to 1F
+[    0.463953] ACPI: \_SB_.PCI0.GPP2.WLAN.WLRT: New power resource
+[    0.465873] ACPI: \_SB_.PCI0.GP17.HDEF.APPR: New power resource
+[    0.477351] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.477351] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+[    0.477460] acpi PNP0A08:00: _OSC: platform does not support [SHPCHotplug LTR DPC]
+[    0.477734] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME AER PCIeCapability]
+[    0.477735] acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+[    0.477748] acpi PNP0A08:00: [Firmware Info]: MMCONFIG for domain 0000 [bus 00-3f] only partially covers this bridge
+[    0.478357] PCI host bridge to bus 0000:00
+[    0.478359] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.478361] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.478363] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.478365] pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000cffff window]
+[    0.478367] pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000effff window]
+[    0.478368] pci_bus 0000:00: root bus resource [mem 0xd0000000-0xf7ffffff window]
+[    0.478370] pci_bus 0000:00: root bus resource [mem 0xfc000000-0xfeafffff window]
+[    0.478371] pci_bus 0000:00: root bus resource [mem 0xfed45000-0xfed811ff window]
+[    0.478373] pci_bus 0000:00: root bus resource [mem 0xfed81900-0xfed81fff window]
+[    0.478375] pci_bus 0000:00: root bus resource [mem 0xfedc0000-0xfedc0fff window]
+[    0.478376] pci_bus 0000:00: root bus resource [mem 0xfedc6000-0xfedc6fff window]
+[    0.478378] pci_bus 0000:00: root bus resource [mem 0x1050200000-0xfcffffffff window]
+[    0.478380] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.478398] pci 0000:00:00.0: [1022:1630] type 00 class 0x060000
+[    0.478486] pci 0000:00:00.2: [1022:1631] type 00 class 0x080600
+[    0.478570] pci 0000:00:01.0: [1022:1632] type 00 class 0x060000
+[    0.478673] pci 0000:00:01.3: [1022:1634] type 01 class 0x060400
+[    0.478731] pci 0000:00:01.3: PME# supported from D0 D3hot D3cold
+[    0.478854] pci 0000:00:02.0: [1022:1632] type 00 class 0x060000
+[    0.478958] pci 0000:00:02.4: [1022:1634] type 01 class 0x060400
+[    0.479015] pci 0000:00:02.4: PME# supported from D0 D3hot D3cold
+[    0.479129] pci 0000:00:08.0: [1022:1632] type 00 class 0x060000
+[    0.479220] pci 0000:00:08.1: [1022:1635] type 01 class 0x060400
+[    0.479243] pci 0000:00:08.1: enabling Extended Tags
+[    0.479277] pci 0000:00:08.1: PME# supported from D0 D3hot D3cold
+[    0.479445] pci 0000:00:14.0: [1022:790b] type 00 class 0x0c0500
+[    0.479586] pci 0000:00:14.3: [1022:790e] type 00 class 0x060100
+[    0.479744] pci 0000:00:18.0: [1022:166a] type 00 class 0x060000
+[    0.479816] pci 0000:00:18.1: [1022:166b] type 00 class 0x060000
+[    0.479888] pci 0000:00:18.2: [1022:166c] type 00 class 0x060000
+[    0.479960] pci 0000:00:18.3: [1022:166d] type 00 class 0x060000
+[    0.480032] pci 0000:00:18.4: [1022:166e] type 00 class 0x060000
+[    0.480104] pci 0000:00:18.5: [1022:166f] type 00 class 0x060000
+[    0.480177] pci 0000:00:18.6: [1022:1670] type 00 class 0x060000
+[    0.480250] pci 0000:00:18.7: [1022:1671] type 00 class 0x060000
+[    0.480393] pci 0000:01:00.0: [10ec:c822] type 00 class 0x028000
+[    0.480413] pci 0000:01:00.0: reg 0x10: [io  0x2000-0x20ff]
+[    0.480437] pci 0000:01:00.0: reg 0x18: [mem 0xd0500000-0xd050ffff 64bit]
+[    0.480554] pci 0000:01:00.0: supports D1 D2
+[    0.480555] pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.480908] pci 0000:00:01.3: PCI bridge to [bus 01]
+[    0.480913] pci 0000:00:01.3:   bridge window [io  0x2000-0x2fff]
+[    0.480916] pci 0000:00:01.3:   bridge window [mem 0xd0500000-0xd05fffff]
+[    0.481010] pci 0000:02:00.0: [1c5c:174a] type 00 class 0x010802
+[    0.481028] pci 0000:02:00.0: reg 0x10: [mem 0xd0400000-0xd0403fff 64bit]
+[    0.481036] pci 0000:02:00.0: reg 0x18: [mem 0xd0405000-0xd0405fff]
+[    0.481044] pci 0000:02:00.0: reg 0x1c: [mem 0xd0404000-0xd0404fff]
+[    0.481306] pci 0000:00:02.4: PCI bridge to [bus 02]
+[    0.481311] pci 0000:00:02.4:   bridge window [mem 0xd0400000-0xd04fffff]
+[    0.481406] pci 0000:03:00.0: [1002:1638] type 00 class 0x030000
+[    0.481418] pci 0000:03:00.0: reg 0x10: [mem 0xfce0000000-0xfcefffffff 64bit pref]
+[    0.481426] pci 0000:03:00.0: reg 0x18: [mem 0xfcf0000000-0xfcf01fffff 64bit pref]
+[    0.481432] pci 0000:03:00.0: reg 0x20: [io  0x1000-0x10ff]
+[    0.481438] pci 0000:03:00.0: reg 0x24: [mem 0xd0300000-0xd037ffff]
+[    0.481447] pci 0000:03:00.0: enabling Extended Tags
+[    0.481461] pci 0000:03:00.0: BAR 0: assigned to efifb
+[    0.481501] pci 0000:03:00.0: PME# supported from D1 D2 D3hot D3cold
+[    0.481540] pci 0000:03:00.0: 126.016 Gb/s available PCIe bandwidth, limited by 8.0 GT/s PCIe x16 link at 0000:00:08.1 (capable of 252.048 Gb/s with 16.0 GT/s PCIe x16 link)
+[    0.481641] pci 0000:03:00.1: [1002:1637] type 00 class 0x040300
+[    0.481649] pci 0000:03:00.1: reg 0x10: [mem 0xd03c8000-0xd03cbfff]
+[    0.481672] pci 0000:03:00.1: enabling Extended Tags
+[    0.481706] pci 0000:03:00.1: PME# supported from D1 D2 D3hot D3cold
+[    0.481769] pci 0000:03:00.2: [1022:15df] type 00 class 0x108000
+[    0.481783] pci 0000:03:00.2: reg 0x18: [mem 0xd0200000-0xd02fffff]
+[    0.481793] pci 0000:03:00.2: reg 0x24: [mem 0xd03cc000-0xd03cdfff]
+[    0.481801] pci 0000:03:00.2: enabling Extended Tags
+[    0.481924] pci 0000:03:00.3: [1022:1639] type 00 class 0x0c0330
+[    0.481935] pci 0000:03:00.3: reg 0x10: [mem 0xd0000000-0xd00fffff 64bit]
+[    0.481960] pci 0000:03:00.3: enabling Extended Tags
+[    0.481996] pci 0000:03:00.3: PME# supported from D0 D3hot D3cold
+[    0.482102] pci 0000:03:00.4: [1022:1639] type 00 class 0x0c0330
+[    0.482114] pci 0000:03:00.4: reg 0x10: [mem 0xd0100000-0xd01fffff 64bit]
+[    0.482139] pci 0000:03:00.4: enabling Extended Tags
+[    0.482174] pci 0000:03:00.4: PME# supported from D0 D3hot D3cold
+[    0.482273] pci 0000:03:00.5: [1022:15e2] type 00 class 0x048000
+[    0.482281] pci 0000:03:00.5: reg 0x10: [mem 0xd0380000-0xd03bffff]
+[    0.482303] pci 0000:03:00.5: enabling Extended Tags
+[    0.482336] pci 0000:03:00.5: PME# supported from D0 D3hot D3cold
+[    0.482427] pci 0000:03:00.6: [1022:15e3] type 00 class 0x040300
+[    0.482436] pci 0000:03:00.6: reg 0x10: [mem 0xd03c0000-0xd03c7fff]
+[    0.482458] pci 0000:03:00.6: enabling Extended Tags
+[    0.482491] pci 0000:03:00.6: PME# supported from D0 D3hot D3cold
+[    0.482604] pci 0000:00:08.1: PCI bridge to [bus 03]
+[    0.482607] pci 0000:00:08.1:   bridge window [io  0x1000-0x1fff]
+[    0.482610] pci 0000:00:08.1:   bridge window [mem 0xd0000000-0xd03fffff]
+[    0.482613] pci 0000:00:08.1:   bridge window [mem 0xfce0000000-0xfcf01fffff 64bit pref]
+[    0.483461] ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+[    0.483463] ACPI: PCI: Interrupt link LNKA disabled
+[    0.483571] ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+[    0.483572] ACPI: PCI: Interrupt link LNKB disabled
+[    0.483656] ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+[    0.483657] ACPI: PCI: Interrupt link LNKC disabled
+[    0.483763] ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+[    0.483764] ACPI: PCI: Interrupt link LNKD disabled
+[    0.483862] ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+[    0.483863] ACPI: PCI: Interrupt link LNKE disabled
+[    0.483941] ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+[    0.483943] ACPI: PCI: Interrupt link LNKF disabled
+[    0.484021] ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+[    0.484022] ACPI: PCI: Interrupt link LNKG disabled
+[    0.484100] ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+[    0.484101] ACPI: PCI: Interrupt link LNKH disabled
+[    0.486203] ACPI: EC: interrupt unblocked
+[    0.486205] ACPI: EC: event unblocked
+[    0.486207] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.486208] ACPI: EC: GPE=0x3
+[    0.486210] ACPI: \_SB_.PCI0.LPC0.EC0_: Boot DSDT EC initialization complete
+[    0.486212] ACPI: \_SB_.PCI0.LPC0.EC0_: EC: Used to handle transactions and events
+[    0.486900] iommu: Default domain type: Translated
+[    0.486900] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.487089] SCSI subsystem initialized
+[    0.487097] libata version 3.00 loaded.
+[    0.487097] ACPI: bus type USB registered
+[    0.487097] usbcore: registered new interface driver usbfs
+[    0.487097] usbcore: registered new interface driver hub
+[    0.487097] usbcore: registered new device driver usb
+[    0.505276] pps_core: LinuxPPS API ver. 1 registered
+[    0.505278] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.505281] PTP clock support registered
+[    0.505299] EDAC MC: Ver: 3.0.0
+[    0.505299] efivars: Registered efivars operations
+[    0.505299] NetLabel: Initializing
+[    0.505299] NetLabel:  domain hash size = 128
+[    0.505299] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.505299] NetLabel:  unlabeled traffic allowed by default
+[    0.505299] mctp: management component transport protocol core
+[    0.505299] NET: Registered PF_MCTP protocol family
+[    0.505299] PCI: Using ACPI for IRQ routing
+[    0.505299] PCI: pci_cache_line_size set to 64 bytes
+[    0.505299] resource: Expanded resource Reserved due to conflict with PCI Bus 0000:00
+[    0.505299] e820: reserve RAM buffer [mem 0x0009f000-0x0009ffff]
+[    0.505299] e820: reserve RAM buffer [mem 0x09bf0000-0x0bffffff]
+[    0.505299] e820: reserve RAM buffer [mem 0x09f00000-0x0bffffff]
+[    0.505299] e820: reserve RAM buffer [mem 0xb3478018-0xb3ffffff]
+[    0.505299] e820: reserve RAM buffer [mem 0xb34f2000-0xb3ffffff]
+[    0.505299] e820: reserve RAM buffer [mem 0xc6f7f000-0xc7ffffff]
+[    0.505299] e820: reserve RAM buffer [mem 0xce000000-0xcfffffff]
+[    0.505299] e820: reserve RAM buffer [mem 0x100e300000-0x100fffffff]
+[    0.506895] pci 0000:03:00.0: vgaarb: setting as boot VGA device
+[    0.506897] pci 0000:03:00.0: vgaarb: bridge control possible
+[    0.506899] pci 0000:03:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+[    0.506902] vgaarb: loaded
+[    0.506975] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.506981] hpet0: 3 comparators, 32-bit 14.318180 MHz counter
+[    0.509036] clocksource: Switched to clocksource tsc-early
+[    0.510914] VFS: Disk quotas dquot_6.6.0
+[    0.510932] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.511080] AppArmor: AppArmor Filesystem Enabled
+[    0.511119] pnp: PnP ACPI init
+[    0.511366] system 00:00: [mem 0xfec00000-0xfec01fff] could not be reserved
+[    0.511370] system 00:00: [mem 0xfee00000-0xfee00fff] has been reserved
+[    0.511373] system 00:00: [mem 0xfdc00000-0xfdcfffff] has been reserved
+[    0.511657] system 00:02: [io  0x0400-0x04cf] has been reserved
+[    0.511661] system 00:02: [io  0x04d0-0x04d1] has been reserved
+[    0.511663] system 00:02: [io  0x04d6] has been reserved
+[    0.511665] system 00:02: [io  0x0c00-0x0c01] has been reserved
+[    0.511667] system 00:02: [io  0x0c14] has been reserved
+[    0.511670] system 00:02: [io  0x0c50-0x0c52] has been reserved
+[    0.511672] system 00:02: [io  0x0c6c] has been reserved
+[    0.511674] system 00:02: [io  0x0c6f] has been reserved
+[    0.511676] system 00:02: [io  0x0cd0-0x0cdb] has been reserved
+[    0.511678] system 00:02: [io  0xfd60-0xfd67] has been reserved
+[    0.511680] system 00:02: [io  0x0200-0x0201] has been reserved
+[    0.511787] system 00:03: [mem 0xfe000000-0xffffffff] could not be reserved
+[    0.524826] pnp: PnP ACPI: found 4 devices
+[    0.531136] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.531344] NET: Registered PF_INET protocol family
+[    0.531663] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.534144] tcp_listen_portaddr_hash hash table entries: 32768 (order: 7, 524288 bytes, linear)
+[    0.534182] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.534478] TCP established hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.534868] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.534960] TCP: Hash tables configured (established 524288 bind 65536)
+[    0.535188] MPTCP token hash table entries: 65536 (order: 8, 1572864 bytes, linear)
+[    0.535297] UDP hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    0.535431] UDP-Lite hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    0.535565] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.535578] NET: Registered PF_XDP protocol family
+[    0.535589] pci 0000:00:01.3: PCI bridge to [bus 01]
+[    0.535593] pci 0000:00:01.3:   bridge window [io  0x2000-0x2fff]
+[    0.535597] pci 0000:00:01.3:   bridge window [mem 0xd0500000-0xd05fffff]
+[    0.535602] pci 0000:00:02.4: PCI bridge to [bus 02]
+[    0.535606] pci 0000:00:02.4:   bridge window [mem 0xd0400000-0xd04fffff]
+[    0.535611] pci 0000:00:08.1: PCI bridge to [bus 03]
+[    0.535613] pci 0000:00:08.1:   bridge window [io  0x1000-0x1fff]
+[    0.535616] pci 0000:00:08.1:   bridge window [mem 0xd0000000-0xd03fffff]
+[    0.535619] pci 0000:00:08.1:   bridge window [mem 0xfce0000000-0xfcf01fffff 64bit pref]
+[    0.535623] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.535625] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.535627] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.535629] pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000cffff window]
+[    0.535630] pci_bus 0000:00: resource 8 [mem 0x000d0000-0x000effff window]
+[    0.535632] pci_bus 0000:00: resource 9 [mem 0xd0000000-0xf7ffffff window]
+[    0.535633] pci_bus 0000:00: resource 10 [mem 0xfc000000-0xfeafffff window]
+[    0.535635] pci_bus 0000:00: resource 11 [mem 0xfed45000-0xfed811ff window]
+[    0.535637] pci_bus 0000:00: resource 12 [mem 0xfed81900-0xfed81fff window]
+[    0.535638] pci_bus 0000:00: resource 13 [mem 0xfedc0000-0xfedc0fff window]
+[    0.535640] pci_bus 0000:00: resource 14 [mem 0xfedc6000-0xfedc6fff window]
+[    0.535641] pci_bus 0000:00: resource 15 [mem 0x1050200000-0xfcffffffff window]
+[    0.535643] pci_bus 0000:01: resource 0 [io  0x2000-0x2fff]
+[    0.535645] pci_bus 0000:01: resource 1 [mem 0xd0500000-0xd05fffff]
+[    0.535647] pci_bus 0000:02: resource 1 [mem 0xd0400000-0xd04fffff]
+[    0.535648] pci_bus 0000:03: resource 0 [io  0x1000-0x1fff]
+[    0.535650] pci_bus 0000:03: resource 1 [mem 0xd0000000-0xd03fffff]
+[    0.535651] pci_bus 0000:03: resource 2 [mem 0xfce0000000-0xfcf01fffff 64bit pref]
+[    0.535785] pci 0000:03:00.1: D0 power state depends on 0000:03:00.0
+[    0.535792] pci 0000:03:00.3: extending delay after power-on from D3hot to 20 msec
+[    0.539249] pci 0000:03:00.4: extending delay after power-on from D3hot to 20 msec
+[    0.563020] pci 0000:03:00.4: quirk_usb_early_handoff+0x0/0x190 took 23209 usecs
+[    0.563033] PCI: CLS 64 bytes, default 64
+[    0.563047] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
+[    0.563099] Trying to unpack rootfs image as initramfs...
+[    0.563138] pci 0000:00:01.0: Adding to iommu group 0
+[    0.563163] pci 0000:00:01.3: Adding to iommu group 1
+[    0.563195] pci 0000:00:02.0: Adding to iommu group 2
+[    0.563219] pci 0000:00:02.4: Adding to iommu group 3
+[    0.563253] pci 0000:00:08.0: Adding to iommu group 4
+[    0.563280] pci 0000:00:08.1: Adding to iommu group 5
+[    0.563325] pci 0000:00:14.0: Adding to iommu group 6
+[    0.563349] pci 0000:00:14.3: Adding to iommu group 6
+[    0.563461] pci 0000:00:18.0: Adding to iommu group 7
+[    0.563485] pci 0000:00:18.1: Adding to iommu group 7
+[    0.563509] pci 0000:00:18.2: Adding to iommu group 7
+[    0.563531] pci 0000:00:18.3: Adding to iommu group 7
+[    0.563553] pci 0000:00:18.4: Adding to iommu group 7
+[    0.563575] pci 0000:00:18.5: Adding to iommu group 7
+[    0.563597] pci 0000:00:18.6: Adding to iommu group 7
+[    0.563619] pci 0000:00:18.7: Adding to iommu group 7
+[    0.563642] pci 0000:01:00.0: Adding to iommu group 8
+[    0.563666] pci 0000:02:00.0: Adding to iommu group 9
+[    0.563700] pci 0000:03:00.0: Adding to iommu group 10
+[    0.563724] pci 0000:03:00.1: Adding to iommu group 11
+[    0.563748] pci 0000:03:00.2: Adding to iommu group 12
+[    0.563774] pci 0000:03:00.3: Adding to iommu group 13
+[    0.563799] pci 0000:03:00.4: Adding to iommu group 14
+[    0.563823] pci 0000:03:00.5: Adding to iommu group 15
+[    0.563847] pci 0000:03:00.6: Adding to iommu group 16
+[    0.566441] pci 0000:00:00.2: can't derive routing for PCI INT A
+[    0.566444] pci 0000:00:00.2: PCI INT A: not connected
+[    0.566648] pci 0000:00:00.2: AMD-Vi: Found IOMMU cap 0x40
+[    0.566650] AMD-Vi: Extended features (0x206d73ef22254ade, 0x0): PPR X2APIC NX GT IA GA PC GA_vAPIC
+[    0.566661] AMD-Vi: Interrupt remapping enabled
+[    0.566662] AMD-Vi: X2APIC enabled
+[    0.775479] AMD-Vi: Virtual APIC enabled
+[    0.775492] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.775493] software IO TLB: mapped [mem 0x00000000c25dd000-0x00000000c65dd000] (64MB)
+[    0.775574] LVT offset 0 assigned for vector 0x400
+[    0.779769] perf: AMD IBS detected (0x000003ff)
+[    0.779781] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+[    0.779856] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.780581] Initialise system trusted keyrings
+[    0.780598] Key type blacklist registered
+[    0.780637] workingset: timestamp_bits=36 max_order=24 bucket_order=0
+[    0.780652] zbud: loaded
+[    0.780971] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.781053] fuse: init (API version 7.39)
+[    0.781186] integrity: Platform Keyring initialized
+[    0.781189] integrity: Machine keyring initialized
+[    0.788169] Key type asymmetric registered
+[    0.788171] Asymmetric key parser 'x509' registered
+[    0.788188] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+[    0.788224] io scheduler mq-deadline registered
+[    0.789496] pcieport 0000:00:01.3: PME: Signaling with IRQ 28
+[    0.789617] pcieport 0000:00:02.4: PME: Signaling with IRQ 29
+[    0.789736] pcieport 0000:00:08.1: PME: Signaling with IRQ 30
+[    0.789833] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.789899] efifb: probing for efifb
+[    0.789915] efifb: showing boot graphics
+[    0.791362] efifb: framebuffer at 0xfce0000000, using 8100k, total 8100k
+[    0.791364] efifb: mode is 1920x1080x32, linelength=7680, pages=1
+[    0.791365] efifb: scrolling: redraw
+[    0.791366] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    0.791416] fbcon: Deferring console take-over
+[    0.791417] fb0: EFI VGA frame buffer device
+[    0.793408] ACPI: AC: AC Adapter [ACAD] (on-line)
+[    0.793464] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+[    0.793486] ACPI: button: Power Button [PWRB]
+[    0.793524] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input1
+[    0.793544] ACPI: button: Lid Switch [LID]
+[    0.793578] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    0.793628] ACPI: button: Power Button [PWRF]
+[    0.793710] Estimated ratio of average max frequency by base frequency (times 1024): 1726
+[    0.793728] Monitor-Mwait will be used to enter C-1 state
+[    0.793733] ACPI: \_SB_.PLTF.C000: Found 3 idle states
+[    0.793868] ACPI: \_SB_.PLTF.C001: Found 3 idle states
+[    0.794015] ACPI: \_SB_.PLTF.C002: Found 3 idle states
+[    0.794158] ACPI: \_SB_.PLTF.C003: Found 3 idle states
+[    0.794301] ACPI: \_SB_.PLTF.C004: Found 3 idle states
+[    0.794435] ACPI: \_SB_.PLTF.C005: Found 3 idle states
+[    0.794544] ACPI: \_SB_.PLTF.C006: Found 3 idle states
+[    0.794697] ACPI: \_SB_.PLTF.C007: Found 3 idle states
+[    0.794861] ACPI: \_SB_.PLTF.C008: Found 3 idle states
+[    0.795015] ACPI: \_SB_.PLTF.C009: Found 3 idle states
+[    0.795161] ACPI: \_SB_.PLTF.C00A: Found 3 idle states
+[    0.795333] ACPI: \_SB_.PLTF.C00B: Found 3 idle states
+[    0.795502] ACPI: \_SB_.PLTF.C00C: Found 3 idle states
+[    0.795644] ACPI: \_SB_.PLTF.C00D: Found 3 idle states
+[    0.795786] ACPI: \_SB_.PLTF.C00E: Found 3 idle states
+[    0.795928] ACPI: \_SB_.PLTF.C00F: Found 3 idle states
+[    0.819433] thermal LNXTHERM:00: registered as thermal_zone0
+[    0.819436] ACPI: thermal: Thermal Zone [CPUZ] (50 C)
+[    0.839762] thermal LNXTHERM:01: registered as thermal_zone1
+[    0.839766] ACPI: thermal: Thermal Zone [GFXZ] (0 C)
+[    0.851779] thermal LNXTHERM:02: registered as thermal_zone2
+[    0.851782] ACPI: thermal: Thermal Zone [EXTZ] (28 C)
+[    0.863754] thermal LNXTHERM:03: registered as thermal_zone3
+[    0.863757] ACPI: thermal: Thermal Zone [LOCZ] (32 C)
+[    0.864220] ACPI: \_TZ_.BATZ: Invalid passive threshold
+[    0.875753] thermal LNXTHERM:04: registered as thermal_zone4
+[    0.875757] ACPI: thermal: Thermal Zone [BATZ] (24 C)
+[    0.876695] thermal LNXTHERM:05: registered as thermal_zone5
+[    0.876697] ACPI: thermal: Thermal Zone [CHGZ] (35 C)
+[    0.876994] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.879629] Linux agpgart interface v0.103
+[    0.891566] tpm_tis IFX0785:00: 2.0 TPM (device-id 0x1B, rev-id 22)
+[    0.893105] ACPI: battery: Slot [BATT] (battery present)
+[    0.955593] tpm tpm0: tpm_read_log_acpi: Failed to map ACPI memory
+[    0.971924] loop: module loaded
+[    0.972248] tun: Universal TUN/TAP device driver, 1.6
+[    0.972289] PPP generic driver version 2.4.2
+[    0.972413] i8042: PNP: PS/2 Controller [PNP0303:KBC0] at 0x60,0x64 irq 1
+[    0.972416] i8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp
+[    0.972833] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.972924] mousedev: PS/2 mouse device common for all mice
+[    0.973057] rtc_cmos rtc_cmos: RTC can wake from S4
+[    0.973283] rtc_cmos rtc_cmos: registered as rtc0
+[    0.973310] rtc_cmos rtc_cmos: setting system clock to 2024-01-20T20:30:20 UTC (1705782620)
+[    0.973338] rtc_cmos rtc_cmos: alarms up to one month, 114 bytes nvram, hpet irqs
+[    0.973347] i2c_dev: i2c /dev entries driver
+[    0.973422] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    0.973432] device-mapper: uevent: version 1.0.3
+[    0.973473] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+[    0.973495] platform eisa.0: Probing EISA bus 0
+[    0.973497] platform eisa.0: EISA: Cannot allocate resource for mainboard
+[    0.973499] platform eisa.0: Cannot allocate resource for EISA slot 1
+[    0.973500] platform eisa.0: Cannot allocate resource for EISA slot 2
+[    0.973502] platform eisa.0: Cannot allocate resource for EISA slot 3
+[    0.973503] platform eisa.0: Cannot allocate resource for EISA slot 4
+[    0.973505] platform eisa.0: Cannot allocate resource for EISA slot 5
+[    0.973506] platform eisa.0: Cannot allocate resource for EISA slot 6
+[    0.973507] platform eisa.0: Cannot allocate resource for EISA slot 7
+[    0.973509] platform eisa.0: Cannot allocate resource for EISA slot 8
+[    0.973510] platform eisa.0: EISA: Detected 0 cards
+[    0.974852] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.975000] drop_monitor: Initializing network drop monitor service
+[    0.981955] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+[    0.986538] NET: Registered PF_INET6 protocol family
+[    1.020709] Freeing initrd memory: 120748K
+[    1.027851] Segment Routing with IPv6
+[    1.027869] In-situ OAM (IOAM) with IPv6
+[    1.027912] NET: Registered PF_PACKET protocol family
+[    1.028017] Key type dns_resolver registered
+[    1.029767] microcode: CPU8: patch_level=0x0a50000c
+[    1.029768] microcode: CPU9: patch_level=0x0a50000c
+[    1.029769] microcode: CPU1: patch_level=0x0a50000c
+[    1.029769] microcode: CPU0: patch_level=0x0a50000c
+[    1.029769] microcode: CPU6: patch_level=0x0a50000c
+[    1.029769] microcode: CPU7: patch_level=0x0a50000c
+[    1.029771] microcode: CPU15: patch_level=0x0a50000c
+[    1.029771] microcode: CPU14: patch_level=0x0a50000c
+[    1.029771] microcode: CPU2: patch_level=0x0a50000c
+[    1.029771] microcode: CPU3: patch_level=0x0a50000c
+[    1.029773] microcode: CPU5: patch_level=0x0a50000c
+[    1.029773] microcode: CPU4: patch_level=0x0a50000c
+[    1.029778] microcode: CPU10: patch_level=0x0a50000c
+[    1.029779] microcode: CPU11: patch_level=0x0a50000c
+[    1.029780] microcode: CPU12: patch_level=0x0a50000c
+[    1.029780] microcode: CPU13: patch_level=0x0a50000c
+[    1.029808] microcode: Microcode Update Driver: v2.2.
+[    1.030033] resctrl: L3 allocation detected
+[    1.030035] resctrl: MB allocation detected
+[    1.030036] resctrl: L3 monitoring detected
+[    1.030041] IPI shorthand broadcast: enabled
+[    1.032000] sched_clock: Marking stable (1029826397, 300084)->(1036936548, -6810067)
+[    1.032160] registered taskstats version 1
+[    1.032761] Loading compiled-in X.509 certificates
+[    1.033246] Loaded X.509 cert 'Build time autogenerated kernel key: d776e492d2c1f517a3779e8cb47ff23a468f4b33'
+[    1.033586] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.033903] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.033904] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.033921] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.033933] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    1.033945] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    1.033958] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    1.033971] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    1.033983] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    1.033994] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    1.034006] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    1.038470] Key type .fscrypt registered
+[    1.038472] Key type fscrypt-provisioning registered
+[    1.038511] Key type trusted registered
+[    1.041690] Key type encrypted registered
+[    1.041693] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.041849] Loading compiled-in module X.509 certificates
+[    1.042257] Loaded X.509 cert 'Build time autogenerated kernel key: d776e492d2c1f517a3779e8cb47ff23a468f4b33'
+[    1.042259] ima: Allocated hash algorithm: sha256
+[    1.211651] ima: No architecture policies found
+[    1.211719] evm: Initialising EVM extended attributes:
+[    1.211722] evm: security.selinux
+[    1.211727] evm: security.SMACK64
+[    1.211731] evm: security.SMACK64EXEC
+[    1.211733] evm: security.SMACK64TRANSMUTE
+[    1.211736] evm: security.SMACK64MMAP
+[    1.211739] evm: security.apparmor
+[    1.211742] evm: security.ima
+[    1.211744] evm: security.capability
+[    1.211747] evm: HMAC attrs: 0x1
+[    1.212670] PM:   Magic number: 8:73:549
+[    1.212694] tty ttyS25: hash matches
+[    1.212700] port serial8250:0.24: hash matches
+[    1.212741] clockevents clockevent0: hash matches
+[    1.212781] acpi PNP0C0F:00: hash matches
+[    1.218554] RAS: Correctable Errors collector initialized.
+[    1.218632] clk: Disabling unused clocks
+[    1.219698] Freeing unused decrypted memory: 2028K
+[    1.220238] Freeing unused kernel image (initmem) memory: 4812K
+[    1.231523] Write protecting the kernel read-only data: 34816k
+[    1.232432] Freeing unused kernel image (rodata/data gap) memory: 1092K
+[    1.274434] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.274459] Run /init as init process
+[    1.274460]   with arguments:
+[    1.274462]     /init
+[    1.274463]     splash
+[    1.274464]   with environment:
+[    1.274466]     HOME=/
+[    1.274467]     TERM=linux
+[    1.351135] wmi_bus wmi_bus-PNP0C14:02: WQBJ data block query control method not found
+[    1.352914] ACPI: video: Video Device [VGA] (multi-head: yes  rom: no  post: no)
+[    1.353111] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:0d/LNXVIDEO:00/input/input4
+[    1.366315] piix4_smbus 0000:00:14.0: SMBus Host Controller at 0xb00, revision 0
+[    1.366319] piix4_smbus 0000:00:14.0: Using register 0x02 for SMBus port selection
+[    1.366538] piix4_smbus 0000:00:14.0: Auxiliary SMBus Host Controller at 0xb20
+[    1.366612] ACPI: bus type drm_connector registered
+[    1.367515] xhci_hcd 0000:03:00.3: xHCI Host Controller
+[    1.367525] xhci_hcd 0000:03:00.3: new USB bus registered, assigned bus number 1
+[    1.367662] xhci_hcd 0000:03:00.3: hcc params 0x0268ffe5 hci version 0x110 quirks 0x0000020200000410
+[    1.368218] xhci_hcd 0000:03:00.3: xHCI Host Controller
+[    1.368223] xhci_hcd 0000:03:00.3: new USB bus registered, assigned bus number 2
+[    1.368227] xhci_hcd 0000:03:00.3: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.368322] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.06
+[    1.368326] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.368328] usb usb1: Product: xHCI Host Controller
+[    1.368330] usb usb1: Manufacturer: Linux 6.6.6-76060606-generic xhci-hcd
+[    1.368333] usb usb1: SerialNumber: 0000:03:00.3
+[    1.368603] hub 1-0:1.0: USB hub found
+[    1.368624] hub 1-0:1.0: 4 ports detected
+[    1.369107] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.369140] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.06
+[    1.369143] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.369145] usb usb2: Product: xHCI Host Controller
+[    1.369147] usb usb2: Manufacturer: Linux 6.6.6-76060606-generic xhci-hcd
+[    1.369149] usb usb2: SerialNumber: 0000:03:00.3
+[    1.369247] hid: raw HID events driver (C) Jiri Kosina
+[    1.369289] hub 2-0:1.0: USB hub found
+[    1.369298] hub 2-0:1.0: 2 ports detected
+[    1.369656] xhci_hcd 0000:03:00.4: xHCI Host Controller
+[    1.369662] xhci_hcd 0000:03:00.4: new USB bus registered, assigned bus number 3
+[    1.369763] xhci_hcd 0000:03:00.4: hcc params 0x0268ffe5 hci version 0x110 quirks 0x0000020200000410
+[    1.370201] xhci_hcd 0000:03:00.4: xHCI Host Controller
+[    1.370205] xhci_hcd 0000:03:00.4: new USB bus registered, assigned bus number 4
+[    1.370209] xhci_hcd 0000:03:00.4: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.370262] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.06
+[    1.370265] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.370267] usb usb3: Product: xHCI Host Controller
+[    1.370269] usb usb3: Manufacturer: Linux 6.6.6-76060606-generic xhci-hcd
+[    1.370271] usb usb3: SerialNumber: 0000:03:00.4
+[    1.370396] hub 3-0:1.0: USB hub found
+[    1.370410] hub 3-0:1.0: 4 ports detected
+[    1.370806] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.370833] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.06
+[    1.370835] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.370837] usb usb4: Product: xHCI Host Controller
+[    1.370839] usb usb4: Manufacturer: Linux 6.6.6-76060606-generic xhci-hcd
+[    1.370841] usb usb4: SerialNumber: 0000:03:00.4
+[    1.370958] hub 4-0:1.0: USB hub found
+[    1.370970] hub 4-0:1.0: 2 ports detected
+[    1.371881] cryptd: max_cpu_qlen set to 1000
+[    1.375541] nvme 0000:02:00.0: platform quirk: setting simple suspend
+[    1.375667] nvme nvme0: pci function 0000:02:00.0
+[    1.376680] AVX2 version of gcm_enc/dec engaged.
+[    1.376722] AES CTR mode by8 optimization enabled
+[    1.444527] i2c_hid_acpi i2c-SYNA30D2:00: i2c_hid_get_input: incomplete report (64/72)
+[    1.447005] nvme nvme0: 16/0/0 default/read/poll queues
+[    1.452482] nvme nvme0: Ignoring bogus Namespace Identifiers
+[    1.454646]  nvme0n1: p1 p2 p3
+[    1.530233] input: SYNA30D2:00 06CB:CE08 Mouse as /devices/platform/AMDI0010:00/i2c-0/i2c-SYNA30D2:00/0018:06CB:CE08.0001/input/input5
+[    1.530339] input: SYNA30D2:00 06CB:CE08 Touchpad as /devices/platform/AMDI0010:00/i2c-0/i2c-SYNA30D2:00/0018:06CB:CE08.0001/input/input7
+[    1.530438] hid-generic 0018:06CB:CE08.0001: input,hidraw0: I2C HID v1.00 Mouse [SYNA30D2:00 06CB:CE08] on i2c-SYNA30D2:00
+[    1.624447] usb 1-1: new full-speed USB device number 2 using xhci_hcd
+[    1.624471] usb 3-2: new full-speed USB device number 2 using xhci_hcd
+[    1.780323] tsc: Refined TSC clocksource calibration: 1896.446 MHz
+[    1.780335] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x36ac1d1c5c3, max_idle_ns: 881590569684 ns
+[    4.455139] clocksource: Switched to clocksource tsc
+[    4.457253] usb 1-1: not running at top speed; connect to a high speed hub
+[    4.465821] [drm] amdgpu kernel modesetting enabled.
+[    4.465962] amdgpu: Virtual CRAT table created for CPU
+[    4.465984] amdgpu: Topology: Add CPU node
+[    4.466137] amdgpu 0000:03:00.0: enabling device (0006 -> 0007)
+[    4.466235] [drm] initializing kernel modesetting (RENOIR 0x1002:0x1638 0x1002:0x0123 0xD1).
+[    4.469238] usb 3-2: New USB device found, idVendor=046d, idProduct=c53d, bcdDevice=43.01
+[    4.469244] usb 3-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.469247] usb 3-2: Product: USB Receiver
+[    4.469250] usb 3-2: Manufacturer: Logitech
+[    4.472560] [drm] register mmio base: 0xD0300000
+[    4.472564] [drm] register mmio size: 524288
+[    4.475241] usb 1-1: New USB device found, idVendor=291a, idProduct=8324, bcdDevice= 6.12
+[    4.475244] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    4.475246] usb 1-1: Product: Anker USB-C Hub Device
+[    4.475248] usb 1-1: Manufacturer: Anker
+[    4.475250] usb 1-1: SerialNumber: 0000000000000001
+[    4.475351] [drm] add ip block number 0 <soc15_common>
+[    4.475353] [drm] add ip block number 1 <gmc_v9_0>
+[    4.475354] [drm] add ip block number 2 <vega10_ih>
+[    4.475355] [drm] add ip block number 3 <psp>
+[    4.475357] [drm] add ip block number 4 <smu>
+[    4.475358] [drm] add ip block number 5 <dm>
+[    4.475359] [drm] add ip block number 6 <gfx_v9_0>
+[    4.475361] [drm] add ip block number 7 <sdma_v4_0>
+[    4.475362] [drm] add ip block number 8 <vcn_v2_0>
+[    4.475364] [drm] add ip block number 9 <jpeg_v2_0>
+[    4.475372] amdgpu 0000:03:00.0: amdgpu: Fetched VBIOS from VFCT
+[    4.475376] amdgpu: ATOM BIOS: 113-CEZANNE-018
+[    4.476085] [drm] VCN decode is enabled in VM mode
+[    4.476086] [drm] VCN encode is enabled in VM mode
+[    4.476351] [drm] JPEG decode is enabled in VM mode
+[    4.476354] [drm] MCBP is enabled
+[    4.476448] amdgpu 0000:03:00.0: vgaarb: deactivate vga console
+[    4.476453] amdgpu 0000:03:00.0: amdgpu: Trusted Memory Zone (TMZ) feature enabled
+[    4.476455] amdgpu 0000:03:00.0: amdgpu: MODE2 reset
+[    4.477249] [drm] vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
+[    4.477254] amdgpu 0000:03:00.0: amdgpu: VRAM: 512M 0x000000F400000000 - 0x000000F41FFFFFFF (512M used)
+[    4.477256] amdgpu 0000:03:00.0: amdgpu: GART: 1024M 0x0000000000000000 - 0x000000003FFFFFFF
+[    4.477258] amdgpu 0000:03:00.0: amdgpu: AGP: 267419648M 0x000000F800000000 - 0x0000FFFFFFFFFFFF
+[    4.477263] [drm] Detected VRAM RAM=512M, BAR=512M
+[    4.477264] [drm] RAM width 128bits DDR4
+[    4.477355] [drm] amdgpu: 512M of VRAM memory ready
+[    4.477357] [drm] amdgpu: 31812M of GTT memory ready.
+[    4.477376] [drm] GART: num cpu pages 262144, num gpu pages 262144
+[    4.477483] [drm] PCIE GART of 1024M enabled.
+[    4.477484] [drm] PTB located at 0x000000F41FC00000
+[    4.477747] [drm] Loading DMUB firmware via PSP: version=0x01010027
+[    4.478236] [drm] Found VCN firmware Version ENC: 1.20 DEC: 6 VEP: 0 Revision: 0
+[    4.478244] amdgpu 0000:03:00.0: amdgpu: Will use PSP to load VCN firmware
+[    4.488669] input: Logitech USB Receiver as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.0/0003:046D:C53D.0002/input/input9
+[    4.548926] hid-generic 0003:046D:C53D.0002: input,hidraw1: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:03:00.4-2/input0
+[    4.553485] input: Logitech USB Receiver Mouse as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.0003/input/input10
+[    4.553606] input: Logitech USB Receiver Consumer Control as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.0003/input/input11
+[    4.608743] usb 3-4: new high-speed USB device number 3 using xhci_hcd
+[    4.608756] usb 1-2: new full-speed USB device number 3 using xhci_hcd
+[    4.612825] input: Logitech USB Receiver System Control as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.0003/input/input12
+[    4.612948] hid-generic 0003:046D:C53D.0003: input,hiddev0,hidraw2: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:03:00.4-2/input1
+[    4.616414] hid-generic 0003:046D:C53D.0004: hiddev1,hidraw3: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:03:00.4-2/input2
+[    4.616447] usbcore: registered new interface driver usbhid
+[    4.616449] usbhid: USB HID core driver
+[    4.760597] usb 3-4: New USB device found, idVendor=0408, idProduct=5484, bcdDevice= 0.02
+[    4.760601] usb 3-4: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+[    4.760603] usb 3-4: Product: HP HD Camera
+[    4.760605] usb 3-4: Manufacturer: Quanta
+[    4.760607] usb 3-4: SerialNumber: 0001
+[    4.779262] usb 1-2: New USB device found, idVendor=046d, idProduct=c539, bcdDevice=39.06
+[    4.779266] usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.779269] usb 1-2: Product: USB Receiver
+[    4.779270] usb 1-2: Manufacturer: Logitech
+[    4.796481] input: Logitech USB Receiver as /devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-2/1-2:1.0/0003:046D:C539.0005/input/input14
+[    4.857041] hid-generic 0003:046D:C539.0005: input,hidraw4: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:03:00.3-2/input0
+[    4.862494] input: Logitech USB Receiver Mouse as /devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-2/1-2:1.1/0003:046D:C539.0006/input/input15
+[    4.862613] input: Logitech USB Receiver Consumer Control as /devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-2/1-2:1.1/0003:046D:C539.0006/input/input16
+[    4.920808] input: Logitech USB Receiver System Control as /devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-2/1-2:1.1/0003:046D:C539.0006/input/input17
+[    4.920916] hid-generic 0003:046D:C539.0006: input,hiddev2,hidraw5: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:03:00.3-2/input1
+[    4.925467] hid-generic 0003:046D:C539.0007: hiddev3,hidraw6: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:03:00.3-2/input2
+[    5.004661] logitech-djreceiver 0003:046D:C539.0005: hidraw4: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:03:00.3-2/input0
+[    5.052743] usb 1-3: new full-speed USB device number 4 using xhci_hcd
+[    5.201442] [drm] reserve 0x400000 from 0xf41f800000 for PSP TMR
+[    5.214298] usb 1-3: New USB device found, idVendor=0bda, idProduct=b00c, bcdDevice= 0.00
+[    5.214305] usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    5.214310] usb 1-3: Product: Bluetooth Radio
+[    5.214313] usb 1-3: Manufacturer: Realtek
+[    5.214316] usb 1-3: SerialNumber: 00e04c000001
+[    5.224915] logitech-djreceiver 0003:046D:C539.0006: hiddev2,hidraw5: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:03:00.3-2/input1
+[    5.285266] logitech-djreceiver 0003:046D:C539.0007: hiddev3,hidraw6: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:03:00.3-2/input2
+[    5.286827] amdgpu 0000:03:00.0: amdgpu: RAS: optional ras ta ucode is not available
+[    5.296004] amdgpu 0000:03:00.0: amdgpu: RAP: optional rap ta ucode is not available
+[    5.296007] amdgpu 0000:03:00.0: amdgpu: SECUREDISPLAY: securedisplay ta ucode is not available
+[    5.299622] amdgpu 0000:03:00.0: amdgpu: SMU is initialized successfully!
+[    5.299928] [drm] Display Core v3.2.247 initialized on DCN 2.1
+[    5.299930] [drm] DP-HDMI FRL PCON supported
+[    5.300580] [drm] DMUB hardware initialized: version=0x01010027
+[    5.346428] logitech-djreceiver 0003:046D:C539.0007: device of type eQUAD Lightspeed 1 (0x0c) connected on slot 1
+[    5.346768] input: Logitech Wireless Mouse PID:4079 Keyboard as /devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-2/1-2:1.2/0003:046D:C539.0007/0003:046D:4079.0008/input/input19
+[    5.347006] input: Logitech Wireless Mouse PID:4079 Mouse as /devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-2/1-2:1.2/0003:046D:C539.0007/0003:046D:4079.0008/input/input20
+[    5.347380] hid-generic 0003:046D:4079.0008: input,hidraw7: USB HID v1.11 Keyboard [Logitech Wireless Mouse PID:4079] on usb-0000:03:00.3-2/input2:1
+[    5.485490] input: Logitech G Pro  as /devices/pci0000:00/0000:00:08.1/0000:03:00.3/usb1/1-2/1-2:1.2/0003:046D:C539.0007/0003:046D:4079.0008/input/input24
+[    5.485875] logitech-hidpp-device 0003:046D:4079.0008: input,hidraw7: USB HID v1.11 Keyboard [Logitech G Pro ] on usb-0000:03:00.3-2/input2:1
+[    5.544373] [drm] DM_MST: Differing MST start on aconnector: 00000000c7f79573 [id: 100]
+[    5.546253] [drm] kiq ring mec 2 pipe 1 q 0
+[    5.550209] [drm] VCN decode and encode initialized successfully(under DPG Mode).
+[    5.550229] [drm] JPEG decode initialized successfully.
+[    5.570842] amdgpu: HMM registered 512MB device memory
+[    5.572554] kfd kfd: amdgpu: Allocated 3969056 bytes on gart
+[    5.572568] kfd kfd: amdgpu: Total number of KFD nodes to be created: 1
+[    5.572684] amdgpu: Virtual CRAT table created for GPU
+[    5.573232] amdgpu: Topology: Add dGPU node [0x1638:0x1002]
+[    5.573234] kfd kfd: amdgpu: added device 1002:1638
+[    5.573312] amdgpu 0000:03:00.0: amdgpu: SE 1, SH per SE 1, CU per SH 8, active_cu_number 8
+[    5.573487] amdgpu 0000:03:00.0: amdgpu: ring gfx uses VM inv eng 0 on hub 0
+[    5.573489] amdgpu 0000:03:00.0: amdgpu: ring gfx_low uses VM inv eng 1 on hub 0
+[    5.573491] amdgpu 0000:03:00.0: amdgpu: ring gfx_high uses VM inv eng 4 on hub 0
+[    5.573492] amdgpu 0000:03:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 5 on hub 0
+[    5.573494] amdgpu 0000:03:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 6 on hub 0
+[    5.573495] amdgpu 0000:03:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 7 on hub 0
+[    5.573497] amdgpu 0000:03:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 8 on hub 0
+[    5.573498] amdgpu 0000:03:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 9 on hub 0
+[    5.573499] amdgpu 0000:03:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 10 on hub 0
+[    5.573501] amdgpu 0000:03:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 11 on hub 0
+[    5.573502] amdgpu 0000:03:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 12 on hub 0
+[    5.573504] amdgpu 0000:03:00.0: amdgpu: ring kiq_0.2.1.0 uses VM inv eng 13 on hub 0
+[    5.573505] amdgpu 0000:03:00.0: amdgpu: ring sdma0 uses VM inv eng 0 on hub 8
+[    5.573506] amdgpu 0000:03:00.0: amdgpu: ring vcn_dec uses VM inv eng 1 on hub 8
+[    5.573508] amdgpu 0000:03:00.0: amdgpu: ring vcn_enc0 uses VM inv eng 4 on hub 8
+[    5.573509] amdgpu 0000:03:00.0: amdgpu: ring vcn_enc1 uses VM inv eng 5 on hub 8
+[    5.573511] amdgpu 0000:03:00.0: amdgpu: ring jpeg_dec uses VM inv eng 6 on hub 8
+[    5.585250] [drm] Initialized amdgpu 3.54.0 20150101 for 0000:03:00.0 on minor 0
+[    5.590919] fbcon: amdgpudrmfb (fb0) is primary device
+[    5.590921] fbcon: Deferring console take-over
+[    5.590923] amdgpu 0000:03:00.0: [drm] fb0: amdgpudrmfb frame buffer device
+[    5.679467] system76_acpi: loading out-of-tree module taints kernel.
+[    5.679471] system76_acpi: module verification failed: signature and/or required key missing - tainting kernel
+[    5.682655] system76: Model does not utilize this driver
+[    5.743768] usbcore: registered new interface driver system76-io
+[    5.824805] raid6: avx2x4   gen() 41964 MB/s
+[    5.838700] [drm] Downstream port present 1, type 2
+[    5.892422] raid6: avx2x2   gen() 45409 MB/s
+[    5.960781] raid6: avx2x1   gen() 33716 MB/s
+[    5.960782] raid6: using algorithm avx2x2 gen() 45409 MB/s
+[    6.028422] raid6: .... xor() 39284 MB/s, rmw enabled
+[    6.028424] raid6: using avx2x2 recovery algorithm
+[    6.029486] xor: automatically using best checksumming function   avx       
+[    6.030058] async_tx: api initialized (async)
+[    6.139885] [drm] Downstream port present 1, type 2
+[    6.165105] [drm] DSC precompute is not needed.
+[    6.878503] [drm] crtc[1] needs mode_changed
+[    8.050634] EXT4-fs (nvme0n1p3): mounted filesystem e236a917-c33d-47f4-95b5-7d8e1b09698a ro with ordered data mode. Quota mode: none.
+[    8.199525] systemd[1]: Inserted module 'autofs4'
+[    8.212100] systemd[1]: Successfully credited entropy passed from boot loader.
+[    8.213244] systemd[1]: systemd 249.11-0ubuntu3.11pop0~1704473387~22.04~3ce38bf running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    8.213350] systemd[1]: Detected architecture x86-64.
+[    8.213590] systemd[1]: Hostname set to <pop-os>.
+[    8.263049] systemd[1]: memfd_create() called without MFD_EXEC or MFD_NOEXEC_SEAL set
+[    8.339177] block nvme0n1: the capability attribute has been deprecated.
+[    8.399924] systemd[1]: Queued start job for default target Graphical Interface.
+[    8.429774] systemd[1]: Created slice Slice /system/modprobe.
+[    8.430113] systemd[1]: Created slice User and Session Slice.
+[    8.430192] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    8.430356] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    8.430414] systemd[1]: Reached target User and Group Name Lookups.
+[    8.430425] systemd[1]: Reached target Remote File Systems.
+[    8.430433] systemd[1]: Reached target Slice Units.
+[    8.430443] systemd[1]: Reached target Swaps.
+[    8.430452] systemd[1]: Reached target System Time Set.
+[    8.430474] systemd[1]: Reached target Local Verity Protected Volumes.
+[    8.430541] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    8.430643] systemd[1]: Listening on LVM2 poll daemon socket.
+[    8.430959] systemd[1]: Listening on Syslog Socket.
+[    8.431007] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    8.431173] systemd[1]: Listening on Journal Audit Socket.
+[    8.431246] systemd[1]: Listening on Journal Socket (/dev/log).
+[    8.431339] systemd[1]: Listening on Journal Socket.
+[    8.431542] systemd[1]: Listening on udev Control Socket.
+[    8.431616] systemd[1]: Listening on udev Kernel Socket.
+[    8.432506] systemd[1]: Mounting Huge Pages File System...
+[    8.433551] systemd[1]: Mounting POSIX Message Queue File System...
+[    8.434483] systemd[1]: Mounting Kernel Debug File System...
+[    8.435383] systemd[1]: Mounting Kernel Trace File System...
+[    8.437154] systemd[1]: Starting Journal Service...
+[    8.437315] systemd[1]: Finished Availability of block devices.
+[    8.438634] systemd[1]: Starting Set the console keyboard layout...
+[    8.439489] systemd[1]: Starting Create List of Static Device Nodes...
+[    8.440317] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    8.441117] systemd[1]: Starting Load Kernel Module configfs...
+[    8.441929] systemd[1]: Starting Load Kernel Module drm...
+[    8.442740] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    8.443699] systemd[1]: Starting Load Kernel Module fuse...
+[    8.444729] systemd[1]: Started Nameserver information manager.
+[    8.446227] pstore: Using crash dump compression: deflate
+[    8.446310] systemd[1]: Starting Load Kernel Modules...
+[    8.447240] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    8.448238] systemd[1]: Starting Coldplug All udev Devices...
+[    8.449678] systemd[1]: Mounted Huge Pages File System.
+[    8.449809] systemd[1]: Mounted POSIX Message Queue File System.
+[    8.449920] systemd[1]: Mounted Kernel Debug File System.
+[    8.450030] systemd[1]: Mounted Kernel Trace File System.
+[    8.450334] pstore: Registered efi_pstore as persistent store backend
+[    8.450507] systemd[1]: Finished Create List of Static Device Nodes.
+[    8.450781] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    8.451068] systemd[1]: Finished Load Kernel Module configfs.
+[    8.451311] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[    8.451582] systemd[1]: Finished Load Kernel Module drm.
+[    8.451810] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[    8.452077] systemd[1]: Finished Load Kernel Module efi_pstore.
+[    8.452313] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    8.452586] systemd[1]: Finished Load Kernel Module fuse.
+[    8.454029] systemd[1]: Mounting FUSE Control File System...
+[    8.454961] systemd[1]: Mounting Kernel Configuration File System...
+[    8.455899] systemd[1]: Mounted FUSE Control File System.
+[    8.456696] systemd[1]: Mounted Kernel Configuration File System.
+[    8.457524] lp: driver loaded but no devices found
+[    8.460161] ppdev: user-space parallel port driver
+[    8.477512] systemd[1]: Finished Set the console keyboard layout.
+[    8.479207] io scheduler kyber registered
+[    8.480352] systemd[1]: Finished Load Kernel Modules.
+[    8.481343] systemd[1]: Starting Apply Kernel Variables...
+[    8.488618] systemd[1]: Started Journal Service.
+[    8.496068] EXT4-fs (nvme0n1p3): re-mounted e236a917-c33d-47f4-95b5-7d8e1b09698a r/w. Quota mode: none.
+[    8.502441] systemd-journald[429]: Received client request to flush runtime journal.
+[    8.510660] systemd-journald[429]: File /var/log/journal/b6cf43c038e2d42153a60b806311447c/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    8.602752] acpi-tad ACPI000E:00: Missing _PRW
+[    8.602880] input: Wireless hotkeys as /devices/virtual/input/input25
+[    8.696129] io scheduler bfq registered
+[    8.696736] ccp 0000:03:00.2: enabling device (0000 -> 0002)
+[    8.697086] ccp 0000:03:00.2: ccp: unable to access the device: you might be running a broken BIOS.
+[    8.697566] RAPL PMU: API unit is 2^-32 Joules, 1 fixed counters, 163840 ms ovfl timer
+[    8.697570] RAPL PMU: hw unit of domain package 2^-16 Joules
+[    8.707263] ccp 0000:03:00.2: tee enabled
+[    8.707345] ccp 0000:03:00.2: psp enabled
+[    8.716078] snd_rn_pci_acp3x 0000:03:00.5: enabling device (0000 -> 0002)
+[    8.729068] hp_vendor: Found supported system
+[    8.738106] ACPI: battery: new extension: HP Vendor Battery Extension
+[    8.808320] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    8.808649] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    8.812862] mc: Linux media interface: v0.10
+[    8.824002] kvm_amd: TSC scaling supported
+[    8.824009] kvm_amd: Nested Virtualization enabled
+[    8.824012] kvm_amd: Nested Paging enabled
+[    8.824030] kvm_amd: Virtual VMLOAD VMSAVE supported
+[    8.824032] kvm_amd: Virtual GIF supported
+[    8.824033] kvm_amd: LBR virtualization supported
+[    8.836866] MCE: In-kernel MCE decoding enabled.
+[    8.842877] videodev: Linux video capture interface: v2.00
+[    8.869673] Bluetooth: Core ver 2.22
+[    8.869797] NET: Registered PF_BLUETOOTH protocol family
+[    8.869800] Bluetooth: HCI device and connection manager initialized
+[    8.869805] Bluetooth: HCI socket layer initialized
+[    8.869809] Bluetooth: L2CAP socket layer initialized
+[    8.869817] Bluetooth: SCO socket layer initialized
+[    8.871336] FAT-fs (nvme0n1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    8.871392] FAT-fs (nvme0n1p2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    8.892450] audit: type=1400 audit(1705782628.413:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-senddoc" pid=732 comm="apparmor_parser"
+[    8.892458] audit: type=1400 audit(1705782628.413:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-xpdfimport" pid=734 comm="apparmor_parser"
+[    8.892463] audit: type=1400 audit(1705782628.413:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-oosplash" pid=731 comm="apparmor_parser"
+[    8.892600] audit: type=1400 audit(1705782628.417:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=725 comm="apparmor_parser"
+[    8.893177] audit: type=1400 audit(1705782628.417:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=726 comm="apparmor_parser"
+[    8.893182] audit: type=1400 audit(1705782628.417:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=726 comm="apparmor_parser"
+[    8.893267] audit: type=1400 audit(1705782628.417:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=729 comm="apparmor_parser"
+[    8.893272] audit: type=1400 audit(1705782628.417:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=729 comm="apparmor_parser"
+[    8.893276] audit: type=1400 audit(1705782628.417:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=729 comm="apparmor_parser"
+[    8.893891] audit: type=1400 audit(1705782628.417:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=736 comm="apparmor_parser"
+[    8.930794] intel_rapl_common: Found RAPL domain package
+[    8.930799] intel_rapl_common: Found RAPL domain core
+[    8.941705] usb 3-4: Found UVC 1.10 device HP HD Camera (0408:5484)
+[    8.948075] rtw_8822ce 0000:01:00.0: enabling device (0000 -> 0003)
+[    8.948660] usbcore: registered new interface driver uvcvideo
+[    8.953159] rtw_8822ce 0000:01:00.0: WOW Firmware version 9.9.4, H2C version 15
+[    8.953325] rtw_8822ce 0000:01:00.0: Firmware version 9.9.15, H2C version 15
+[    8.981208] input: SYNA30D2:00 06CB:CE08 as /devices/platform/AMDI0010:00/i2c-0/i2c-SYNA30D2:00/0018:06CB:CE08.0001/input/input27
+[    8.981347] input: SYNA30D2:00 06CB:CE08 as /devices/platform/AMDI0010:00/i2c-0/i2c-SYNA30D2:00/0018:06CB:CE08.0001/input/input28
+[    8.981450] input: SYNA30D2:00 06CB:CE08 as /devices/platform/AMDI0010:00/i2c-0/i2c-SYNA30D2:00/0018:06CB:CE08.0001/input/input30
+[    8.981602] hid-multitouch 0018:06CB:CE08.0001: input,hidraw0: I2C HID v1.00 Mouse [SYNA30D2:00 06CB:CE08] on i2c-SYNA30D2:00
+[    9.017257] zram: Added device: zram0
+[    9.026007] snd_hda_intel 0000:03:00.1: enabling device (0000 -> 0002)
+[    9.026647] snd_hda_intel 0000:03:00.6: enabling device (0000 -> 0002)
+[    9.046799] snd_hda_intel 0000:03:00.1: bound 0000:03:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])
+[    9.060590] rtw_8822ce 0000:01:00.0 wlo1: renamed from wlan0
+[    9.060869] input: HD-Audio Generic HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:08.1/0000:03:00.1/sound/card0/input35
+[    9.065471] input: HD-Audio Generic HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:08.1/0000:03:00.1/sound/card0/input36
+[    9.065624] input: HD-Audio Generic HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:08.1/0000:03:00.1/sound/card0/input37
+[    9.065766] input: HD-Audio Generic HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:08.1/0000:03:00.1/sound/card0/input38
+[    9.068157] usbcore: registered new interface driver btusb
+[    9.069329] Bluetooth: hci0: RTL: examining hci_ver=0a hci_rev=000c lmp_ver=0a lmp_subver=8822
+[    9.071262] Bluetooth: hci0: RTL: rom_version status=0 version=3
+[    9.071267] Bluetooth: hci0: RTL: loading rtl_bt/rtl8822cu_fw.bin
+[    9.071799] Bluetooth: hci0: RTL: loading rtl_bt/rtl8822cu_config.bin
+[    9.072461] Bluetooth: hci0: RTL: cfg_sz 6, total sz 35990
+[    9.085871] snd_hda_codec_realtek hdaudioC1D0: autoconfig for ALC285: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+[    9.085878] snd_hda_codec_realtek hdaudioC1D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    9.085883] snd_hda_codec_realtek hdaudioC1D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+[    9.085887] snd_hda_codec_realtek hdaudioC1D0:    mono: mono_out=0x0
+[    9.085890] snd_hda_codec_realtek hdaudioC1D0:    inputs:
+[    9.085893] snd_hda_codec_realtek hdaudioC1D0:      Mic=0x19
+[    9.085896] snd_hda_codec_realtek hdaudioC1D0:      Internal Mic=0x12
+[    9.161500] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    9.161506] Bluetooth: BNEP filters: protocol multicast
+[    9.161511] Bluetooth: BNEP socket layer initialized
+[    9.384265] Bluetooth: hci0: RTL: fw version 0x0cc6d2e3
+[    9.463778] input: HP WMI hotkeys as /devices/virtual/input/input26
+[    9.490256] Bluetooth: hci0: AOSP extensions version v1.00
+[    9.490262] Bluetooth: hci0: AOSP quality report is supported
+[    9.490346] Bluetooth: MGMT ver 1.22
+[    9.493790] NET: Registered PF_ALG protocol family
+[    9.791001] Bluetooth: RFCOMM TTY layer initialized
+[    9.791008] Bluetooth: RFCOMM socket layer initialized
+[    9.791014] Bluetooth: RFCOMM ver 1.11
+[    9.801621] input: HD-Audio Generic Mic as /devices/pci0000:00/0000:00:08.1/0000:03:00.6/sound/card1/input39
+[    9.801721] input: HD-Audio Generic Headphone as /devices/pci0000:00/0000:00:08.1/0000:03:00.6/sound/card1/input40
+[   10.046344] zram0: detected capacity change from 0 to 33554432
+[   10.689212] hp_wmi: query 0x4c returned error 0x6
+[   10.693895] Adding 16777212k swap on /dev/zram0.  Priority:1000 extents:1 across:16777212k SS
+[   13.022166] rfkill: input handler disabled
+[   14.222605] wlo1: authenticate with c8:9e:43:b5:9f:57
+[   14.694200] wlo1: send auth to c8:9e:43:b5:9f:57 (try 1/3)
+[   14.697534] wlo1: authenticated
+[   14.704327] wlo1: associate with c8:9e:43:b5:9f:57 (try 1/3)
+[   14.711289] wlo1: RX AssocResp from c8:9e:43:b5:9f:57 (capab=0x1411 status=0 aid=4)
+[   14.711566] wlo1: associated
+[   14.971177] vboxdrv: Found 16 processor cores/threads
+[   14.971322] ================================================================================
+[   14.971326] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/common/log/log.c:1791:41
+[   14.971330] index 1 is out of range for type 'uint32_t [1]'
+[   14.971332] CPU: 2 PID: 1698 Comm: modprobe Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.971335] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.971337] Call Trace:
+[   14.971339]  <TASK>
+[   14.971341]  dump_stack_lvl+0x48/0x70
+[   14.971349]  dump_stack+0x10/0x20
+[   14.971351]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.971356]  VBoxHost_RTLogGroupSettings+0x4cc/0x500 [vboxdrv]
+[   14.971381]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.971385]  ? rtR0MemAllocEx+0x57/0xd0 [vboxdrv]
+[   14.971406]  VBoxHost_RTLogCreateExV+0x295/0x4a0 [vboxdrv]
+[   14.971428]  VBoxHost_RTLogCreate+0x6f/0xb0 [vboxdrv]
+[   14.971452]  ? rtR0MemAllocEx+0x57/0xd0 [vboxdrv]
+[   14.971475]  supdrvInitDevExt+0x59/0x330 [vboxdrv]
+[   14.971496]  VBoxDrvLinuxInit+0x87/0xff0 [vboxdrv]
+[   14.971516]  ? __pfx_VBoxDrvLinuxInit+0x10/0x10 [vboxdrv]
+[   14.971537]  do_one_initcall+0x5e/0x340
+[   14.971543]  do_init_module+0x97/0x290
+[   14.971547]  load_module+0xb85/0xcd0
+[   14.971552]  __do_sys_init_module+0x1a7/0x1e0
+[   14.971554]  ? __do_sys_init_module+0x1a7/0x1e0
+[   14.971559]  __x64_sys_init_module+0x1a/0x30
+[   14.971561]  do_syscall_64+0x5b/0x90
+[   14.971565]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.971567]  ? do_syscall_64+0x67/0x90
+[   14.971569]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.971571]  ? exc_page_fault+0x94/0x1b0
+[   14.971574]  entry_SYSCALL_64_after_hwframe+0x6e/0xd8
+[   14.971578] RIP: 0033:0x79f43cf26bde
+[   14.971601] Code: 48 8b 0d 55 32 0f 00 f7 d8 64 89 01 48 83 c8 ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 49 89 ca b8 af 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 22 32 0f 00 f7 d8 64 89 01 48
+[   14.971602] RSP: 002b:00007ffce07315b8 EFLAGS: 00000246 ORIG_RAX: 00000000000000af
+[   14.971605] RAX: ffffffffffffffda RBX: 0000636b621f6220 RCX: 000079f43cf26bde
+[   14.971607] RDX: 0000636b616bacd2 RSI: 0000000000114fe8 RDI: 000079f43c807010
+[   14.971608] RBP: 000079f43c807010 R08: 000079f43d0c3000 R09: 85ebca77c2b2ae63
+[   14.971610] R10: 0000000000000cdc R11: 0000000000000246 R12: 0000636b616bacd2
+[   14.971611] R13: 0000636b621f63b0 R14: 0000636b621f54d0 R15: 0000636b621f6590
+[   14.971615]  </TASK>
+[   14.971616] ================================================================================
+[   14.971635] ================================================================================
+[   14.971636] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/r0drv/linux/memobj-r0drv-linux.c:399:33
+[   14.971639] index 1 is out of range for type 'page *[1]'
+[   14.971641] CPU: 2 PID: 1698 Comm: modprobe Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.971643] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.971644] Call Trace:
+[   14.971645]  <TASK>
+[   14.971646]  dump_stack_lvl+0x48/0x70
+[   14.971649]  dump_stack+0x10/0x20
+[   14.971651]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.971655]  rtR0MemObjLinuxAllocPages+0x323/0x330 [vboxdrv]
+[   14.971676]  rtR0MemObjNativeAllocCont+0x5f/0x130 [vboxdrv]
+[   14.971696]  VBoxHost_RTR0MemObjAllocContTag+0x4f/0xa0 [vboxdrv]
+[   14.971721]  supdrvGipCreate+0x66/0xdf0 [vboxdrv]
+[   14.971743]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.971746]  ? rtR0MemAllocEx+0x57/0xd0 [vboxdrv]
+[   14.971768]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.971771]  supdrvInitDevExt+0x14d/0x330 [vboxdrv]
+[   14.971794]  VBoxDrvLinuxInit+0x87/0xff0 [vboxdrv]
+[   14.971813]  ? __pfx_VBoxDrvLinuxInit+0x10/0x10 [vboxdrv]
+[   14.971835]  do_one_initcall+0x5e/0x340
+[   14.971840]  do_init_module+0x97/0x290
+[   14.971843]  load_module+0xb85/0xcd0
+[   14.971849]  __do_sys_init_module+0x1a7/0x1e0
+[   14.971851]  ? __do_sys_init_module+0x1a7/0x1e0
+[   14.971857]  __x64_sys_init_module+0x1a/0x30
+[   14.971859]  do_syscall_64+0x5b/0x90
+[   14.971863]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.971865]  ? do_syscall_64+0x67/0x90
+[   14.971867]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.971869]  ? exc_page_fault+0x94/0x1b0
+[   14.971872]  entry_SYSCALL_64_after_hwframe+0x6e/0xd8
+[   14.971874] RIP: 0033:0x79f43cf26bde
+[   14.971881] Code: 48 8b 0d 55 32 0f 00 f7 d8 64 89 01 48 83 c8 ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 49 89 ca b8 af 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 22 32 0f 00 f7 d8 64 89 01 48
+[   14.971882] RSP: 002b:00007ffce07315b8 EFLAGS: 00000246 ORIG_RAX: 00000000000000af
+[   14.971885] RAX: ffffffffffffffda RBX: 0000636b621f6220 RCX: 000079f43cf26bde
+[   14.971886] RDX: 0000636b616bacd2 RSI: 0000000000114fe8 RDI: 000079f43c807010
+[   14.971888] RBP: 000079f43c807010 R08: 000079f43d0c3000 R09: 85ebca77c2b2ae63
+[   14.971889] R10: 0000000000000cdc R11: 0000000000000246 R12: 0000636b616bacd2
+[   14.971891] R13: 0000636b621f63b0 R14: 0000636b621f54d0 R15: 0000636b621f6590
+[   14.971895]  </TASK>
+[   14.971896] ================================================================================
+[   14.971898] ================================================================================
+[   14.971900] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/r0drv/linux/memobj-r0drv-linux.c:596:45
+[   14.971902] index 3 is out of range for type 'page *[1]'
+[   14.971904] CPU: 2 PID: 1698 Comm: modprobe Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.971906] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.971907] Call Trace:
+[   14.971908]  <TASK>
+[   14.971909]  dump_stack_lvl+0x48/0x70
+[   14.971912]  dump_stack+0x10/0x20
+[   14.971915]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.971919]  rtR0MemObjLinuxVMap+0xb7/0xc0 [vboxdrv]
+[   14.971943]  rtR0MemObjNativeAllocCont+0x76/0x130 [vboxdrv]
+[   14.971965]  VBoxHost_RTR0MemObjAllocContTag+0x4f/0xa0 [vboxdrv]
+[   14.971991]  supdrvGipCreate+0x66/0xdf0 [vboxdrv]
+[   14.972017]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.972019]  ? rtR0MemAllocEx+0x57/0xd0 [vboxdrv]
+[   14.972044]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.972048]  supdrvInitDevExt+0x14d/0x330 [vboxdrv]
+[   14.972073]  VBoxDrvLinuxInit+0x87/0xff0 [vboxdrv]
+[   14.972098]  ? __pfx_VBoxDrvLinuxInit+0x10/0x10 [vboxdrv]
+[   14.972122]  do_one_initcall+0x5e/0x340
+[   14.972127]  do_init_module+0x97/0x290
+[   14.972130]  load_module+0xb85/0xcd0
+[   14.972136]  __do_sys_init_module+0x1a7/0x1e0
+[   14.972138]  ? __do_sys_init_module+0x1a7/0x1e0
+[   14.972144]  __x64_sys_init_module+0x1a/0x30
+[   14.972146]  do_syscall_64+0x5b/0x90
+[   14.972149]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.972151]  ? do_syscall_64+0x67/0x90
+[   14.972154]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.972156]  ? exc_page_fault+0x94/0x1b0
+[   14.972159]  entry_SYSCALL_64_after_hwframe+0x6e/0xd8
+[   14.972161] RIP: 0033:0x79f43cf26bde
+[   14.972166] Code: 48 8b 0d 55 32 0f 00 f7 d8 64 89 01 48 83 c8 ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 49 89 ca b8 af 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 22 32 0f 00 f7 d8 64 89 01 48
+[   14.972167] RSP: 002b:00007ffce07315b8 EFLAGS: 00000246 ORIG_RAX: 00000000000000af
+[   14.972169] RAX: ffffffffffffffda RBX: 0000636b621f6220 RCX: 000079f43cf26bde
+[   14.972171] RDX: 0000636b616bacd2 RSI: 0000000000114fe8 RDI: 000079f43c807010
+[   14.972172] RBP: 000079f43c807010 R08: 000079f43d0c3000 R09: 85ebca77c2b2ae63
+[   14.972174] R10: 0000000000000cdc R11: 0000000000000246 R12: 0000636b616bacd2
+[   14.972175] R13: 0000636b621f63b0 R14: 0000636b621f54d0 R15: 0000636b621f6590
+[   14.972179]  </TASK>
+[   14.972180] ================================================================================
+[   14.972187] ================================================================================
+[   14.972189] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1956:44
+[   14.972191] index 2 is out of range for type 'SUPGIPCPU [1]'
+[   14.972193] CPU: 2 PID: 1698 Comm: modprobe Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.972195] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.972196] Call Trace:
+[   14.972197]  <TASK>
+[   14.972198]  dump_stack_lvl+0x48/0x70
+[   14.972201]  dump_stack+0x10/0x20
+[   14.972204]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.972208]  supdrvGipCreate+0xddf/0xdf0 [vboxdrv]
+[   14.972231]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.972235]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.972238]  supdrvInitDevExt+0x14d/0x330 [vboxdrv]
+[   14.972263]  VBoxDrvLinuxInit+0x87/0xff0 [vboxdrv]
+[   14.972288]  ? __pfx_VBoxDrvLinuxInit+0x10/0x10 [vboxdrv]
+[   14.972329]  do_one_initcall+0x5e/0x340
+[   14.972334]  do_init_module+0x97/0x290
+[   14.972337]  load_module+0xb85/0xcd0
+[   14.972343]  __do_sys_init_module+0x1a7/0x1e0
+[   14.972345]  ? __do_sys_init_module+0x1a7/0x1e0
+[   14.972351]  __x64_sys_init_module+0x1a/0x30
+[   14.972353]  do_syscall_64+0x5b/0x90
+[   14.972356]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.972358]  ? do_syscall_64+0x67/0x90
+[   14.972361]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.972363]  ? exc_page_fault+0x94/0x1b0
+[   14.972366]  entry_SYSCALL_64_after_hwframe+0x6e/0xd8
+[   14.972368] RIP: 0033:0x79f43cf26bde
+[   14.972373] Code: 48 8b 0d 55 32 0f 00 f7 d8 64 89 01 48 83 c8 ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 49 89 ca b8 af 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 22 32 0f 00 f7 d8 64 89 01 48
+[   14.972375] RSP: 002b:00007ffce07315b8 EFLAGS: 00000246 ORIG_RAX: 00000000000000af
+[   14.972377] RAX: ffffffffffffffda RBX: 0000636b621f6220 RCX: 000079f43cf26bde
+[   14.972378] RDX: 0000636b616bacd2 RSI: 0000000000114fe8 RDI: 000079f43c807010
+[   14.972380] RBP: 000079f43c807010 R08: 000079f43d0c3000 R09: 85ebca77c2b2ae63
+[   14.972381] R10: 0000000000000cdc R11: 0000000000000246 R12: 0000636b616bacd2
+[   14.972383] R13: 0000636b621f63b0 R14: 0000636b621f54d0 R15: 0000636b621f6590
+[   14.972387]  </TASK>
+[   14.972397] ================================================================================
+[   14.972562] systemd-journald[429]: File /var/log/journal/b6cf43c038e2d42153a60b806311447c/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+[   14.992315] ================================================================================
+[   14.992322] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:904:43
+[   14.992325] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.992329] CPU: 2 PID: 1698 Comm: modprobe Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.992332] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.992334] Call Trace:
+[   14.992337]  <TASK>
+[   14.992340]  dump_stack_lvl+0x48/0x70
+[   14.992351]  dump_stack+0x10/0x20
+[   14.992355]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.992362]  supdrvGipInitSetCpuFreq+0x2cc/0x2e0 [vboxdrv]
+[   14.992411]  ? ktime_get_ts64+0x4f/0x100
+[   14.992420]  supdrvGipInitMeasureTscFreq+0x145/0x570 [vboxdrv]
+[   14.992468]  supdrvGipCreate+0x870/0xdf0 [vboxdrv]
+[   14.992513]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.992520]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.992525]  supdrvInitDevExt+0x14d/0x330 [vboxdrv]
+[   14.992575]  VBoxDrvLinuxInit+0x87/0xff0 [vboxdrv]
+[   14.992621]  ? __pfx_VBoxDrvLinuxInit+0x10/0x10 [vboxdrv]
+[   14.992668]  do_one_initcall+0x5e/0x340
+[   14.992676]  do_init_module+0x97/0x290
+[   14.992681]  load_module+0xb85/0xcd0
+[   14.992689]  __do_sys_init_module+0x1a7/0x1e0
+[   14.992693]  ? __do_sys_init_module+0x1a7/0x1e0
+[   14.992700]  __x64_sys_init_module+0x1a/0x30
+[   14.992704]  do_syscall_64+0x5b/0x90
+[   14.992709]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.992712]  ? do_syscall_64+0x67/0x90
+[   14.992716]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.992719]  ? exc_page_fault+0x94/0x1b0
+[   14.992724]  entry_SYSCALL_64_after_hwframe+0x6e/0xd8
+[   14.992728] RIP: 0033:0x79f43cf26bde
+[   14.992759] Code: 48 8b 0d 55 32 0f 00 f7 d8 64 89 01 48 83 c8 ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 49 89 ca b8 af 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 22 32 0f 00 f7 d8 64 89 01 48
+[   14.992762] RSP: 002b:00007ffce07315b8 EFLAGS: 00000246 ORIG_RAX: 00000000000000af
+[   14.992766] RAX: ffffffffffffffda RBX: 0000636b621f6220 RCX: 000079f43cf26bde
+[   14.992769] RDX: 0000636b616bacd2 RSI: 0000000000114fe8 RDI: 000079f43c807010
+[   14.992771] RBP: 000079f43c807010 R08: 000079f43d0c3000 R09: 85ebca77c2b2ae63
+[   14.992773] R10: 0000000000000cdc R11: 0000000000000246 R12: 0000636b616bacd2
+[   14.992776] R13: 0000636b621f63b0 R14: 0000636b621f54d0 R15: 0000636b621f6590
+[   14.992782]  </TASK>
+[   14.992784] ================================================================================
+[   14.992838] ================================================================================
+[   14.992840] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1392:24
+[   14.992843] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.992845] CPU: 2 PID: 1698 Comm: modprobe Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.992848] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.992850] Call Trace:
+[   14.992851]  <TASK>
+[   14.992853]  dump_stack_lvl+0x48/0x70
+[   14.992857]  dump_stack+0x10/0x20
+[   14.992860]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.992865]  supdrvGipMpEventOnlineOrInitOnCpu+0x393/0x4e0 [vboxdrv]
+[   14.992905]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.992937]  VBoxHost_RTMpOnAll+0x10c/0x260 [vboxdrv]
+[   14.992969]  ? __pfx_supdrvGipInitOnCpu+0x10/0x10 [vboxdrv]
+[   14.993003]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993005]  ? __kmalloc+0x50/0xe0
+[   14.993010]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993012]  ? _raw_spin_lock_irqsave+0xe/0x20
+[   14.993015]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993017]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993019]  ? VBoxHost_RTSpinlockRelease+0x27/0x50 [vboxdrv]
+[   14.993050]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993052]  ? VBoxHost_RTMpNotificationRegister+0x1c1/0x200 [vboxdrv]
+[   14.993087]  supdrvGipCreate+0x519/0xdf0 [vboxdrv]
+[   14.993118]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993121]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993124]  supdrvInitDevExt+0x14d/0x330 [vboxdrv]
+[   14.993156]  VBoxDrvLinuxInit+0x87/0xff0 [vboxdrv]
+[   14.993187]  ? __pfx_VBoxDrvLinuxInit+0x10/0x10 [vboxdrv]
+[   14.993218]  do_one_initcall+0x5e/0x340
+[   14.993222]  do_init_module+0x97/0x290
+[   14.993225]  load_module+0xb85/0xcd0
+[   14.993231]  __do_sys_init_module+0x1a7/0x1e0
+[   14.993233]  ? __do_sys_init_module+0x1a7/0x1e0
+[   14.993238]  __x64_sys_init_module+0x1a/0x30
+[   14.993240]  do_syscall_64+0x5b/0x90
+[   14.993243]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993245]  ? do_syscall_64+0x67/0x90
+[   14.993248]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993250]  ? exc_page_fault+0x94/0x1b0
+[   14.993252]  entry_SYSCALL_64_after_hwframe+0x6e/0xd8
+[   14.993255] RIP: 0033:0x79f43cf26bde
+[   14.993261] Code: 48 8b 0d 55 32 0f 00 f7 d8 64 89 01 48 83 c8 ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 49 89 ca b8 af 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 22 32 0f 00 f7 d8 64 89 01 48
+[   14.993263] RSP: 002b:00007ffce07315b8 EFLAGS: 00000246 ORIG_RAX: 00000000000000af
+[   14.993265] RAX: ffffffffffffffda RBX: 0000636b621f6220 RCX: 000079f43cf26bde
+[   14.993266] RDX: 0000636b616bacd2 RSI: 0000000000114fe8 RDI: 000079f43c807010
+[   14.993268] RBP: 000079f43c807010 R08: 000079f43d0c3000 R09: 85ebca77c2b2ae63
+[   14.993269] R10: 0000000000000cdc R11: 0000000000000246 R12: 0000636b616bacd2
+[   14.993270] R13: 0000636b621f63b0 R14: 0000636b621f54d0 R15: 0000636b621f6590
+[   14.993275]  </TASK>
+[   14.993276] ================================================================================
+[   14.993279] ================================================================================
+[   14.993282] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1401:13
+[   14.993285] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.993287] CPU: 9 PID: 0 Comm: swapper/9 Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.993289] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.993291] Call Trace:
+[   14.993292]  <IRQ>
+[   14.993294]  dump_stack_lvl+0x48/0x70
+[   14.993299]  dump_stack+0x10/0x20
+[   14.993302]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.993306]  supdrvGipFindOrAllocCpuIndexForCpuId.part.0+0xc0/0xd0 [vboxdrv]
+[   14.993340]  supdrvGipMpEventOnlineOrInitOnCpu+0x260/0x4e0 [vboxdrv]
+[   14.993372]  ? __pfx_rtmpLinuxAllWrapper+0x10/0x10 [vboxdrv]
+[   14.993404]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.993435]  rtmpLinuxAllWrapper+0x61/0x90 [vboxdrv]
+[   14.993466]  __flush_smp_call_function_queue+0x10a/0x450
+[   14.993473]  ? tick_nohz_stop_idle+0x4b/0x80
+[   14.993477]  generic_smp_call_function_single_interrupt+0x13/0x20
+[   14.993480]  __sysvec_call_function+0x1c/0xd0
+[   14.993484]  sysvec_call_function+0x8d/0xd0
+[   14.993487]  </IRQ>
+[   14.993488]  <TASK>
+[   14.993489]  asm_sysvec_call_function+0x1b/0x20
+[   14.993492] RIP: 0010:cpuidle_enter_state+0xda/0x720
+[   14.993495] Code: 30 04 ff e8 a8 f5 ff ff 8b 53 04 49 89 c7 0f 1f 44 00 00 31 ff e8 06 d7 02 ff 80 7d d0 00 0f 85 61 02 00 00 fb 0f 1f 44 00 00 <45> 85 f6 0f 88 f7 01 00 00 4d 63 ee 49 83 fd 09 0f 87 19 05 00 00
+[   14.993497] RSP: 0018:ffffc900001d7e18 EFLAGS: 00000246
+[   14.993499] RAX: 0000000000000000 RBX: ffff888102857c00 RCX: 0000000000000000
+[   14.993501] RDX: 0000000000000009 RSI: 0000000000000000 RDI: 0000000000000000
+[   14.993502] RBP: ffffc900001d7e68 R08: 0000000000000000 R09: 0000000000000000
+[   14.993504] R10: 0000000000000000 R11: 0000000000000000 R12: ffffffff9d8f5a60
+[   14.993505] R13: 0000000000000001 R14: 0000000000000001 R15: 000000037da488f2
+[   14.993509]  ? cpuidle_enter_state+0xca/0x720
+[   14.993511]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993514]  ? finish_task_switch.isra.0+0x85/0x2a0
+[   14.993518]  cpuidle_enter+0x2e/0x50
+[   14.993523]  call_cpuidle+0x23/0x60
+[   14.993528]  cpuidle_idle_call+0x11d/0x190
+[   14.993531]  do_idle+0x82/0xf0
+[   14.993533]  cpu_startup_entry+0x2a/0x30
+[   14.993536]  start_secondary+0x129/0x160
+[   14.993539]  secondary_startup_64_no_verify+0x17d/0x18b
+[   14.993545]  </TASK>
+[   14.993546] ================================================================================
+[   14.993548] ================================================================================
+[   14.993550] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1460:35
+[   14.993552] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.993554] CPU: 9 PID: 0 Comm: swapper/9 Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.993556] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.993557] Call Trace:
+[   14.993558]  <IRQ>
+[   14.993559]  dump_stack_lvl+0x48/0x70
+[   14.993562]  dump_stack+0x10/0x20
+[   14.993564]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.993568]  supdrvGipMpEventOnlineOrInitOnCpu+0x461/0x4e0 [vboxdrv]
+[   14.993600]  ? __pfx_rtmpLinuxAllWrapper+0x10/0x10 [vboxdrv]
+[   14.993631]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.993661]  rtmpLinuxAllWrapper+0x61/0x90 [vboxdrv]
+[   14.993692]  __flush_smp_call_function_queue+0x10a/0x450
+[   14.993695]  ? tick_nohz_stop_idle+0x4b/0x80
+[   14.993698]  generic_smp_call_function_single_interrupt+0x13/0x20
+[   14.993700]  __sysvec_call_function+0x1c/0xd0
+[   14.993703]  sysvec_call_function+0x8d/0xd0
+[   14.993706]  </IRQ>
+[   14.993707]  <TASK>
+[   14.993708]  asm_sysvec_call_function+0x1b/0x20
+[   14.993710] RIP: 0010:cpuidle_enter_state+0xda/0x720
+[   14.993713] Code: 30 04 ff e8 a8 f5 ff ff 8b 53 04 49 89 c7 0f 1f 44 00 00 31 ff e8 06 d7 02 ff 80 7d d0 00 0f 85 61 02 00 00 fb 0f 1f 44 00 00 <45> 85 f6 0f 88 f7 01 00 00 4d 63 ee 49 83 fd 09 0f 87 19 05 00 00
+[   14.993715] RSP: 0018:ffffc900001d7e18 EFLAGS: 00000246
+[   14.993717] RAX: 0000000000000000 RBX: ffff888102857c00 RCX: 0000000000000000
+[   14.993718] RDX: 0000000000000009 RSI: 0000000000000000 RDI: 0000000000000000
+[   14.993719] RBP: ffffc900001d7e68 R08: 0000000000000000 R09: 0000000000000000
+[   14.993721] R10: 0000000000000000 R11: 0000000000000000 R12: ffffffff9d8f5a60
+[   14.993722] R13: 0000000000000001 R14: 0000000000000001 R15: 000000037da488f2
+[   14.993726]  ? cpuidle_enter_state+0xca/0x720
+[   14.993728]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993730]  ? finish_task_switch.isra.0+0x85/0x2a0
+[   14.993734]  cpuidle_enter+0x2e/0x50
+[   14.993737]  call_cpuidle+0x23/0x60
+[   14.993740]  cpuidle_idle_call+0x11d/0x190
+[   14.993743]  do_idle+0x82/0xf0
+[   14.993745]  cpu_startup_entry+0x2a/0x30
+[   14.993748]  start_secondary+0x129/0x160
+[   14.993751]  secondary_startup_64_no_verify+0x17d/0x18b
+[   14.993756]  </TASK>
+[   14.993757] ================================================================================
+[   14.993758] ================================================================================
+[   14.993760] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1461:35
+[   14.993762] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.993763] CPU: 9 PID: 0 Comm: swapper/9 Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.993765] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.993767] Call Trace:
+[   14.993768]  <IRQ>
+[   14.993769]  dump_stack_lvl+0x48/0x70
+[   14.993771]  dump_stack+0x10/0x20
+[   14.993774]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.993777]  supdrvGipMpEventOnlineOrInitOnCpu+0x485/0x4e0 [vboxdrv]
+[   14.993809]  ? __pfx_rtmpLinuxAllWrapper+0x10/0x10 [vboxdrv]
+[   14.993840]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.993870]  rtmpLinuxAllWrapper+0x61/0x90 [vboxdrv]
+[   14.993901]  __flush_smp_call_function_queue+0x10a/0x450
+[   14.993903]  ? tick_nohz_stop_idle+0x4b/0x80
+[   14.993907]  generic_smp_call_function_single_interrupt+0x13/0x20
+[   14.993909]  __sysvec_call_function+0x1c/0xd0
+[   14.993912]  sysvec_call_function+0x8d/0xd0
+[   14.993915]  </IRQ>
+[   14.993915]  <TASK>
+[   14.993917]  asm_sysvec_call_function+0x1b/0x20
+[   14.993919] RIP: 0010:cpuidle_enter_state+0xda/0x720
+[   14.993921] Code: 30 04 ff e8 a8 f5 ff ff 8b 53 04 49 89 c7 0f 1f 44 00 00 31 ff e8 06 d7 02 ff 80 7d d0 00 0f 85 61 02 00 00 fb 0f 1f 44 00 00 <45> 85 f6 0f 88 f7 01 00 00 4d 63 ee 49 83 fd 09 0f 87 19 05 00 00
+[   14.993923] RSP: 0018:ffffc900001d7e18 EFLAGS: 00000246
+[   14.993925] RAX: 0000000000000000 RBX: ffff888102857c00 RCX: 0000000000000000
+[   14.993926] RDX: 0000000000000009 RSI: 0000000000000000 RDI: 0000000000000000
+[   14.993927] RBP: ffffc900001d7e68 R08: 0000000000000000 R09: 0000000000000000
+[   14.993929] R10: 0000000000000000 R11: 0000000000000000 R12: ffffffff9d8f5a60
+[   14.993930] R13: 0000000000000001 R14: 0000000000000001 R15: 000000037da488f2
+[   14.993934]  ? cpuidle_enter_state+0xca/0x720
+[   14.993936]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.993938]  ? finish_task_switch.isra.0+0x85/0x2a0
+[   14.993941]  cpuidle_enter+0x2e/0x50
+[   14.993945]  call_cpuidle+0x23/0x60
+[   14.993947]  cpuidle_idle_call+0x11d/0x190
+[   14.993950]  do_idle+0x82/0xf0
+[   14.993953]  cpu_startup_entry+0x2a/0x30
+[   14.993955]  start_secondary+0x129/0x160
+[   14.993959]  secondary_startup_64_no_verify+0x17d/0x18b
+[   14.993964]  </TASK>
+[   14.993965] ================================================================================
+[   14.993966] ================================================================================
+[   14.993968] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1462:5
+[   14.993970] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.993971] CPU: 9 PID: 0 Comm: swapper/9 Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.993973] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.993974] Call Trace:
+[   14.993975]  <IRQ>
+[   14.993976]  dump_stack_lvl+0x48/0x70
+[   14.993979]  dump_stack+0x10/0x20
+[   14.993981]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.993985]  supdrvGipMpEventOnlineOrInitOnCpu+0x42e/0x4e0 [vboxdrv]
+[   14.994017]  ? __pfx_rtmpLinuxAllWrapper+0x10/0x10 [vboxdrv]
+[   14.994047]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.994077]  rtmpLinuxAllWrapper+0x61/0x90 [vboxdrv]
+[   14.994108]  __flush_smp_call_function_queue+0x10a/0x450
+[   14.994111]  ? tick_nohz_stop_idle+0x4b/0x80
+[   14.994114]  generic_smp_call_function_single_interrupt+0x13/0x20
+[   14.994116]  __sysvec_call_function+0x1c/0xd0
+[   14.994119]  sysvec_call_function+0x8d/0xd0
+[   14.994122]  </IRQ>
+[   14.994123]  <TASK>
+[   14.994124]  asm_sysvec_call_function+0x1b/0x20
+[   14.994126] RIP: 0010:cpuidle_enter_state+0xda/0x720
+[   14.994128] Code: 30 04 ff e8 a8 f5 ff ff 8b 53 04 49 89 c7 0f 1f 44 00 00 31 ff e8 06 d7 02 ff 80 7d d0 00 0f 85 61 02 00 00 fb 0f 1f 44 00 00 <45> 85 f6 0f 88 f7 01 00 00 4d 63 ee 49 83 fd 09 0f 87 19 05 00 00
+[   14.994130] RSP: 0018:ffffc900001d7e18 EFLAGS: 00000246
+[   14.994132] RAX: 0000000000000000 RBX: ffff888102857c00 RCX: 0000000000000000
+[   14.994133] RDX: 0000000000000009 RSI: 0000000000000000 RDI: 0000000000000000
+[   14.994134] RBP: ffffc900001d7e68 R08: 0000000000000000 R09: 0000000000000000
+[   14.994136] R10: 0000000000000000 R11: 0000000000000000 R12: ffffffff9d8f5a60
+[   14.994137] R13: 0000000000000001 R14: 0000000000000001 R15: 000000037da488f2
+[   14.994141]  ? cpuidle_enter_state+0xca/0x720
+[   14.994143]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.994145]  ? finish_task_switch.isra.0+0x85/0x2a0
+[   14.994148]  cpuidle_enter+0x2e/0x50
+[   14.994152]  call_cpuidle+0x23/0x60
+[   14.994154]  cpuidle_idle_call+0x11d/0x190
+[   14.994157]  do_idle+0x82/0xf0
+[   14.994160]  cpu_startup_entry+0x2a/0x30
+[   14.994162]  start_secondary+0x129/0x160
+[   14.994166]  secondary_startup_64_no_verify+0x17d/0x18b
+[   14.994171]  </TASK>
+[   14.994172] ================================================================================
+[   14.994173] ================================================================================
+[   14.994175] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1464:16
+[   14.994176] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.994178] CPU: 9 PID: 0 Comm: swapper/9 Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.994180] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.994181] Call Trace:
+[   14.994182]  <IRQ>
+[   14.994183]  dump_stack_lvl+0x48/0x70
+[   14.994186]  dump_stack+0x10/0x20
+[   14.994188]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.994192]  supdrvGipMpEventOnlineOrInitOnCpu+0x40a/0x4e0 [vboxdrv]
+[   14.994224]  ? __pfx_rtmpLinuxAllWrapper+0x10/0x10 [vboxdrv]
+[   14.994254]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.994284]  rtmpLinuxAllWrapper+0x61/0x90 [vboxdrv]
+[   14.994315]  __flush_smp_call_function_queue+0x10a/0x450
+[   14.994318]  ? tick_nohz_stop_idle+0x4b/0x80
+[   14.994321]  generic_smp_call_function_single_interrupt+0x13/0x20
+[   14.994323]  __sysvec_call_function+0x1c/0xd0
+[   14.994326]  sysvec_call_function+0x8d/0xd0
+[   14.994329]  </IRQ>
+[   14.994330]  <TASK>
+[   14.994331]  asm_sysvec_call_function+0x1b/0x20
+[   14.994333] RIP: 0010:cpuidle_enter_state+0xda/0x720
+[   14.994335] Code: 30 04 ff e8 a8 f5 ff ff 8b 53 04 49 89 c7 0f 1f 44 00 00 31 ff e8 06 d7 02 ff 80 7d d0 00 0f 85 61 02 00 00 fb 0f 1f 44 00 00 <45> 85 f6 0f 88 f7 01 00 00 4d 63 ee 49 83 fd 09 0f 87 19 05 00 00
+[   14.994337] RSP: 0018:ffffc900001d7e18 EFLAGS: 00000246
+[   14.994339] RAX: 0000000000000000 RBX: ffff888102857c00 RCX: 0000000000000000
+[   14.994340] RDX: 0000000000000009 RSI: 0000000000000000 RDI: 0000000000000000
+[   14.994341] RBP: ffffc900001d7e68 R08: 0000000000000000 R09: 0000000000000000
+[   14.994343] R10: 0000000000000000 R11: 0000000000000000 R12: ffffffff9d8f5a60
+[   14.994344] R13: 0000000000000001 R14: 0000000000000001 R15: 000000037da488f2
+[   14.994348]  ? cpuidle_enter_state+0xca/0x720
+[   14.994350]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.994352]  ? finish_task_switch.isra.0+0x85/0x2a0
+[   14.994355]  cpuidle_enter+0x2e/0x50
+[   14.994359]  call_cpuidle+0x23/0x60
+[   14.994361]  cpuidle_idle_call+0x11d/0x190
+[   14.994364]  do_idle+0x82/0xf0
+[   14.994367]  cpu_startup_entry+0x2a/0x30
+[   14.994369]  start_secondary+0x129/0x160
+[   14.994373]  secondary_startup_64_no_verify+0x17d/0x18b
+[   14.994378]  </TASK>
+[   14.994379] ================================================================================
+[   14.994380] ================================================================================
+[   14.994381] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1465:16
+[   14.994383] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.994385] CPU: 9 PID: 0 Comm: swapper/9 Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.994387] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.994388] Call Trace:
+[   14.994389]  <IRQ>
+[   14.994390]  dump_stack_lvl+0x48/0x70
+[   14.994393]  dump_stack+0x10/0x20
+[   14.994395]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.994399]  supdrvGipMpEventOnlineOrInitOnCpu+0x3e6/0x4e0 [vboxdrv]
+[   14.994430]  ? __pfx_rtmpLinuxAllWrapper+0x10/0x10 [vboxdrv]
+[   14.994461]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.994491]  rtmpLinuxAllWrapper+0x61/0x90 [vboxdrv]
+[   14.994522]  __flush_smp_call_function_queue+0x10a/0x450
+[   14.994525]  ? tick_nohz_stop_idle+0x4b/0x80
+[   14.994528]  generic_smp_call_function_single_interrupt+0x13/0x20
+[   14.994530]  __sysvec_call_function+0x1c/0xd0
+[   14.994533]  sysvec_call_function+0x8d/0xd0
+[   14.994535]  </IRQ>
+[   14.994536]  <TASK>
+[   14.994538]  asm_sysvec_call_function+0x1b/0x20
+[   14.994540] RIP: 0010:cpuidle_enter_state+0xda/0x720
+[   14.994542] Code: 30 04 ff e8 a8 f5 ff ff 8b 53 04 49 89 c7 0f 1f 44 00 00 31 ff e8 06 d7 02 ff 80 7d d0 00 0f 85 61 02 00 00 fb 0f 1f 44 00 00 <45> 85 f6 0f 88 f7 01 00 00 4d 63 ee 49 83 fd 09 0f 87 19 05 00 00
+[   14.994544] RSP: 0018:ffffc900001d7e18 EFLAGS: 00000246
+[   14.994546] RAX: 0000000000000000 RBX: ffff888102857c00 RCX: 0000000000000000
+[   14.994547] RDX: 0000000000000009 RSI: 0000000000000000 RDI: 0000000000000000
+[   14.994548] RBP: ffffc900001d7e68 R08: 0000000000000000 R09: 0000000000000000
+[   14.994550] R10: 0000000000000000 R11: 0000000000000000 R12: ffffffff9d8f5a60
+[   14.994551] R13: 0000000000000001 R14: 0000000000000001 R15: 000000037da488f2
+[   14.994555]  ? cpuidle_enter_state+0xca/0x720
+[   14.994557]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.994559]  ? finish_task_switch.isra.0+0x85/0x2a0
+[   14.994562]  cpuidle_enter+0x2e/0x50
+[   14.994565]  call_cpuidle+0x23/0x60
+[   14.994568]  cpuidle_idle_call+0x11d/0x190
+[   14.994571]  do_idle+0x82/0xf0
+[   14.994574]  cpu_startup_entry+0x2a/0x30
+[   14.994576]  start_secondary+0x129/0x160
+[   14.994579]  secondary_startup_64_no_verify+0x17d/0x18b
+[   14.994585]  </TASK>
+[   14.994586] ================================================================================
+[   14.994587] ================================================================================
+[   14.994588] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1491:5
+[   14.994590] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   14.994592] CPU: 9 PID: 0 Comm: swapper/9 Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.994594] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.994595] Call Trace:
+[   14.994596]  <IRQ>
+[   14.994597]  dump_stack_lvl+0x48/0x70
+[   14.994600]  dump_stack+0x10/0x20
+[   14.994602]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.994606]  supdrvGipMpEventOnlineOrInitOnCpu+0x44a/0x4e0 [vboxdrv]
+[   14.994637]  ? __pfx_rtmpLinuxAllWrapper+0x10/0x10 [vboxdrv]
+[   14.994668]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.994698]  rtmpLinuxAllWrapper+0x61/0x90 [vboxdrv]
+[   14.994729]  __flush_smp_call_function_queue+0x10a/0x450
+[   14.994731]  ? tick_nohz_stop_idle+0x4b/0x80
+[   14.994734]  generic_smp_call_function_single_interrupt+0x13/0x20
+[   14.994737]  __sysvec_call_function+0x1c/0xd0
+[   14.994740]  sysvec_call_function+0x8d/0xd0
+[   14.994742]  </IRQ>
+[   14.994743]  <TASK>
+[   14.994745]  asm_sysvec_call_function+0x1b/0x20
+[   14.994747] RIP: 0010:cpuidle_enter_state+0xda/0x720
+[   14.994749] Code: 30 04 ff e8 a8 f5 ff ff 8b 53 04 49 89 c7 0f 1f 44 00 00 31 ff e8 06 d7 02 ff 80 7d d0 00 0f 85 61 02 00 00 fb 0f 1f 44 00 00 <45> 85 f6 0f 88 f7 01 00 00 4d 63 ee 49 83 fd 09 0f 87 19 05 00 00
+[   14.994750] RSP: 0018:ffffc900001d7e18 EFLAGS: 00000246
+[   14.994752] RAX: 0000000000000000 RBX: ffff888102857c00 RCX: 0000000000000000
+[   14.994754] RDX: 0000000000000009 RSI: 0000000000000000 RDI: 0000000000000000
+[   14.994755] RBP: ffffc900001d7e68 R08: 0000000000000000 R09: 0000000000000000
+[   14.994756] R10: 0000000000000000 R11: 0000000000000000 R12: ffffffff9d8f5a60
+[   14.994758] R13: 0000000000000001 R14: 0000000000000001 R15: 000000037da488f2
+[   14.994762]  ? cpuidle_enter_state+0xca/0x720
+[   14.994764]  ? srso_alias_return_thunk+0x5/0x7f
+[   14.994766]  ? finish_task_switch.isra.0+0x85/0x2a0
+[   14.994769]  cpuidle_enter+0x2e/0x50
+[   14.994772]  call_cpuidle+0x23/0x60
+[   14.994775]  cpuidle_idle_call+0x11d/0x190
+[   14.994778]  do_idle+0x82/0xf0
+[   14.994781]  cpu_startup_entry+0x2a/0x30
+[   14.994783]  start_secondary+0x129/0x160
+[   14.994786]  secondary_startup_64_no_verify+0x17d/0x18b
+[   14.994791]  </TASK>
+[   14.994792] ================================================================================
+[   14.994794] ================================================================================
+[   14.994796] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:1457:40
+[   14.994799] index 2 is out of range for type 'SUPGIPCPU [1]'
+[   14.994801] CPU: 8 PID: 1645 Comm: dockerd Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   14.994803] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   14.994805] Call Trace:
+[   14.994806]  <TASK>
+[   14.994808]  dump_stack_lvl+0x48/0x70
+[   14.994812]  dump_stack+0x10/0x20
+[   14.994814]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   14.994818]  supdrvGipMpEventOnlineOrInitOnCpu+0x3be/0x4e0 [vboxdrv]
+[   14.994855]  ? __pfx_rtmpLinuxAllWrapper+0x10/0x10 [vboxdrv]
+[   14.994891]  supdrvGipInitOnCpu+0x15/0x30 [vboxdrv]
+[   14.994928]  rtmpLinuxAllWrapper+0x61/0x90 [vboxdrv]
+[   14.994967]  __flush_smp_call_function_queue+0x10a/0x450
+[   14.994970]  ? do_user_addr_fault+0x350/0x6b0
+[   14.994975]  generic_smp_call_function_single_interrupt+0x13/0x20
+[   14.994978]  __sysvec_call_function+0x1c/0xd0
+[   14.994981]  sysvec_call_function+0x3b/0xd0
+[   14.994985]  asm_sysvec_call_function+0x1b/0x20
+[   14.994988] RIP: 0033:0x57cb7de39ee1
+[   14.994999] Code: 47 0f b7 0c 41 90 41 d1 e0 44 0f b6 d6 45 09 d0 45 0f b6 d0 49 81 fa 88 00 00 00 0f 83 10 04 00 00 4e 8b 54 d2 28 4d 8b 5a 40 <4d> 0f bc e3 41 bd 40 00 00 00 4d 0f 44 e5 49 83 fc 40 0f 8d 7f 00
+[   14.995002] RSP: 002b:000000c0000f3878 EFLAGS: 00000287
+[   14.995004] RAX: 0000000000000000 RBX: 0000000000000030 RCX: 000057cb81737e60
+[   14.995006] RDX: 00007bbd6ec55108 RSI: 0000000000000e00 RDI: 000057cb801d14a0
+[   14.995008] RBP: 000000c0000f38d0 R08: 000000000000000a R09: 0000000000000030
+[   14.995010] R10: 00007bbd45f308e8 R11: 1fffffffffffffff R12: ffffffffffffffff
+[   14.995012] R13: 0000000000000012 R14: 000000c0000061a0 R15: 0000000000001000
+[   14.995017]  </TASK>
+[   14.995018] ================================================================================
+[   14.995173] vboxdrv: TSC mode is Invariant, tentative frequency 1896404850 Hz
+[   14.995175] vboxdrv: Successfully loaded version 7.0.10_Ubuntu r158379 (interface 0x00330004)
+[   15.004316] ================================================================================
+[   15.004322] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:4169:42
+[   15.004326] index 2 is out of range for type 'SUPGIPCPU [1]'
+[   15.004330] CPU: 8 PID: 1762 Comm: iprt-VBoxTscThr Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.004334] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.004336] Call Trace:
+[   15.004339]  <TASK>
+[   15.004342]  dump_stack_lvl+0x48/0x70
+[   15.004352]  dump_stack+0x10/0x20
+[   15.004355]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.004362]  supdrvTscDeltaThread+0x778/0x7c0 [vboxdrv]
+[   15.004400]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.004404]  ? sched_set_normal+0x41/0x70
+[   15.004412]  ? __pfx_rtThreadNativeMain+0x10/0x10 [vboxdrv]
+[   15.004447]  rtThreadMain+0x37/0x80 [vboxdrv]
+[   15.004486]  rtThreadNativeMain+0x1b/0x30 [vboxdrv]
+[   15.004518]  kthread+0xf2/0x120
+[   15.004523]  ? __pfx_kthread+0x10/0x10
+[   15.004528]  ret_from_fork+0x47/0x70
+[   15.004532]  ? __pfx_kthread+0x10/0x10
+[   15.004537]  ret_from_fork_asm+0x1b/0x30
+[   15.004544]  </TASK>
+[   15.004547] ================================================================================
+[   15.004550] ================================================================================
+[   15.004553] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:4206:46
+[   15.004559] index 7 is out of range for type 'SUPGIPCPU [1]'
+[   15.004561] CPU: 8 PID: 1762 Comm: iprt-VBoxTscThr Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.004564] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.004566] Call Trace:
+[   15.004568]  <TASK>
+[   15.004570]  dump_stack_lvl+0x48/0x70
+[   15.004574]  dump_stack+0x10/0x20
+[   15.004577]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.004582]  supdrvTscDeltaThread+0x6dc/0x7c0 [vboxdrv]
+[   15.004615]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.004617]  ? sched_set_normal+0x41/0x70
+[   15.004622]  ? __pfx_rtThreadNativeMain+0x10/0x10 [vboxdrv]
+[   15.004654]  rtThreadMain+0x37/0x80 [vboxdrv]
+[   15.004686]  rtThreadNativeMain+0x1b/0x30 [vboxdrv]
+[   15.004717]  kthread+0xf2/0x120
+[   15.004721]  ? __pfx_kthread+0x10/0x10
+[   15.004725]  ret_from_fork+0x47/0x70
+[   15.004728]  ? __pfx_kthread+0x10/0x10
+[   15.004732]  ret_from_fork_asm+0x1b/0x30
+[   15.004738]  </TASK>
+[   15.004740] ================================================================================
+[   15.004742] ================================================================================
+[   15.004743] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:4253:33
+[   15.004746] index 7 is out of range for type 'SUPGIPCPU [1]'
+[   15.004748] CPU: 8 PID: 1762 Comm: iprt-VBoxTscThr Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.004751] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.004753] Call Trace:
+[   15.004754]  <TASK>
+[   15.004756]  dump_stack_lvl+0x48/0x70
+[   15.004760]  dump_stack+0x10/0x20
+[   15.004763]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.004768]  supdrvTscDeltaThread+0x7b1/0x7c0 [vboxdrv]
+[   15.004800]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.004803]  ? sched_set_normal+0x41/0x70
+[   15.004807]  ? __pfx_rtThreadNativeMain+0x10/0x10 [vboxdrv]
+[   15.004839]  rtThreadMain+0x37/0x80 [vboxdrv]
+[   15.004870]  rtThreadNativeMain+0x1b/0x30 [vboxdrv]
+[   15.004901]  kthread+0xf2/0x120
+[   15.004905]  ? __pfx_kthread+0x10/0x10
+[   15.004909]  ret_from_fork+0x47/0x70
+[   15.004912]  ? __pfx_kthread+0x10/0x10
+[   15.004915]  ret_from_fork_asm+0x1b/0x30
+[   15.004920]  </TASK>
+[   15.004921] ================================================================================
+[   15.004924] ================================================================================
+[   15.004926] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:180:24
+[   15.004928] index 1 is out of range for type 'SUPGIPCPU [1]'
+[   15.004930] CPU: 8 PID: 1762 Comm: iprt-VBoxTscThr Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.004932] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.004933] Call Trace:
+[   15.004934]  <TASK>
+[   15.004935]  dump_stack_lvl+0x48/0x70
+[   15.004938]  dump_stack+0x10/0x20
+[   15.004941]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.004944]  supdrvTscMeasureDeltaOne+0x555/0x7e0 [vboxdrv]
+[   15.004971]  supdrvTscDeltaThread+0x48b/0x7c0 [vboxdrv]
+[   15.004996]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.004998]  ? sched_set_normal+0x41/0x70
+[   15.005001]  ? __pfx_rtThreadNativeMain+0x10/0x10 [vboxdrv]
+[   15.005023]  rtThreadMain+0x37/0x80 [vboxdrv]
+[   15.005048]  rtThreadNativeMain+0x1b/0x30 [vboxdrv]
+[   15.005069]  kthread+0xf2/0x120
+[   15.005072]  ? __pfx_kthread+0x10/0x10
+[   15.005075]  ret_from_fork+0x47/0x70
+[   15.005077]  ? __pfx_kthread+0x10/0x10
+[   15.005080]  ret_from_fork_asm+0x1b/0x30
+[   15.005085]  </TASK>
+[   15.005087] ================================================================================
+[   15.005089] ================================================================================
+[   15.005091] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:4041:33
+[   15.005094] index 7 is out of range for type 'SUPGIPCPU [1]'
+[   15.005097] CPU: 8 PID: 1762 Comm: iprt-VBoxTscThr Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.005099] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.005101] Call Trace:
+[   15.005102]  <TASK>
+[   15.005103]  dump_stack_lvl+0x48/0x70
+[   15.005106]  dump_stack+0x10/0x20
+[   15.005108]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.005112]  supdrvTscMeasureDeltaOne+0x7c3/0x7e0 [vboxdrv]
+[   15.005135]  supdrvTscDeltaThread+0x48b/0x7c0 [vboxdrv]
+[   15.005156]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005158]  ? sched_set_normal+0x41/0x70
+[   15.005162]  ? __pfx_rtThreadNativeMain+0x10/0x10 [vboxdrv]
+[   15.005198]  rtThreadMain+0x37/0x80 [vboxdrv]
+[   15.005237]  rtThreadNativeMain+0x1b/0x30 [vboxdrv]
+[   15.005262]  kthread+0xf2/0x120
+[   15.005266]  ? __pfx_kthread+0x10/0x10
+[   15.005269]  ret_from_fork+0x47/0x70
+[   15.005271]  ? __pfx_kthread+0x10/0x10
+[   15.005274]  ret_from_fork_asm+0x1b/0x30
+[   15.005279]  </TASK>
+[   15.005281] ================================================================================
+[   15.005297] ================================================================================
+[   15.005298] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:4274:52
+[   15.005300] index 2 is out of range for type 'SUPGIPCPU [1]'
+[   15.005302] CPU: 8 PID: 1762 Comm: iprt-VBoxTscThr Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.005304] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.005305] Call Trace:
+[   15.005306]  <TASK>
+[   15.005308]  dump_stack_lvl+0x48/0x70
+[   15.005311]  dump_stack+0x10/0x20
+[   15.005313]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.005317]  supdrvTscDeltaThread+0x72d/0x7c0 [vboxdrv]
+[   15.005338]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005348] ================================================================================
+[   15.005351] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/common/log/log.c:551:41
+[   15.005342]  ? __pfx_rtThreadNativeMain+0x10/0x10 [vboxdrv]
+[   15.005354] index 344 is out of range for type 'uint32_t [1]'
+[   15.005364]  rtThreadMain+0x37/0x80 [vboxdrv]
+[   15.005385]  rtThreadNativeMain+0x1b/0x30 [vboxdrv]
+[   15.005406]  kthread+0xf2/0x120
+[   15.005409]  ? __pfx_kthread+0x10/0x10
+[   15.005413]  ret_from_fork+0x47/0x70
+[   15.005415]  ? __pfx_kthread+0x10/0x10
+[   15.005418]  ret_from_fork_asm+0x1b/0x30
+[   15.005422]  </TASK>
+[   15.005423] ================================================================================
+[   15.005424] CPU: 10 PID: 1777 Comm: modprobe Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.005425] ================================================================================
+[   15.005426] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/SUPDrvGip.c:3997:53
+[   15.005427] index 2 is out of range for type 'SUPGIPCPU [1]'
+[   15.005429] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.005430] Call Trace:
+[   15.005431]  <TASK>
+[   15.005433]  dump_stack_lvl+0x48/0x70
+[   15.005438]  dump_stack+0x10/0x20
+[   15.005440]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.005444]  VBoxHost_RTLogRelGetDefaultInstanceEx+0x9f/0xb0 [vboxdrv]
+[   15.005469]  VBoxNetFltLinuxInit+0x47/0xff0 [vboxnetflt]
+[   15.005474]  ? __pfx_VBoxNetFltLinuxInit+0x10/0x10 [vboxnetflt]
+[   15.005478]  do_one_initcall+0x5e/0x340
+[   15.005484]  do_init_module+0x97/0x290
+[   15.005488]  load_module+0xb85/0xcd0
+[   15.005492]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005494]  ? __vmalloc_node_range+0xda/0x220
+[   15.005498]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005500]  ? find_vmap_area+0x42/0x70
+[   15.005504]  __do_sys_init_module+0x1a7/0x1e0
+[   15.005506]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005508]  ? __do_sys_init_module+0x1a7/0x1e0
+[   15.005514]  __x64_sys_init_module+0x1a/0x30
+[   15.005516]  do_syscall_64+0x5b/0x90
+[   15.005520]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005522]  ? irqentry_exit_to_user_mode+0x17/0x20
+[   15.005525]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005527]  ? irqentry_exit+0x43/0x50
+[   15.005529]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005531]  ? exc_page_fault+0x94/0x1b0
+[   15.005534]  entry_SYSCALL_64_after_hwframe+0x6e/0xd8
+[   15.005537] RIP: 0033:0x75ce32b26bde
+[   15.005564] Code: 48 8b 0d 55 32 0f 00 f7 d8 64 89 01 48 83 c8 ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 49 89 ca b8 af 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 22 32 0f 00 f7 d8 64 89 01 48
+[   15.005566] RSP: 002b:00007ffc2ec15e38 EFLAGS: 00000246 ORIG_RAX: 00000000000000af
+[   15.005569] RAX: ffffffffffffffda RBX: 000061887ccbe220 RCX: 000075ce32b26bde
+[   15.005571] RDX: 000061887c458cd2 RSI: 00000000000125d8 RDI: 000075ce328e6010
+[   15.005572] RBP: 000075ce328e6010 R08: 000075ce3324b000 R09: 85ebca77c2b2ae63
+[   15.005573] R10: 000000000000046a R11: 0000000000000246 R12: 000061887c458cd2
+[   15.005575] R13: 000061887ccbe2a0 R14: 000061887ccbd4d0 R15: 000061887ccbe790
+[   15.005579]  </TASK>
+[   15.005580] ================================================================================
+[   15.005580] CPU: 8 PID: 1762 Comm: iprt-VBoxTscThr Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.005582] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.005583] ================================================================================
+[   15.005584] UBSAN: array-index-out-of-bounds in /var/lib/dkms/virtualbox/7.0.10/build/vboxdrv/common/log/log.c:4161:34
+[   15.005585] Call Trace:
+[   15.005585]  <TASK>
+[   15.005587] index 344 is out of range for type 'uint32_t [1]'
+[   15.005586]  dump_stack_lvl+0x48/0x70
+[   15.005589]  dump_stack+0x10/0x20
+[   15.005592]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.005596]  supdrvTscMeasureDeltaOne+0x5bf/0x7e0 [vboxdrv]
+[   15.005617]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005621]  supdrvTscDeltaThread+0x48b/0x7c0 [vboxdrv]
+[   15.005642]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005646]  ? __pfx_rtThreadNativeMain+0x10/0x10 [vboxdrv]
+[   15.005667]  rtThreadMain+0x37/0x80 [vboxdrv]
+[   15.005688]  rtThreadNativeMain+0x1b/0x30 [vboxdrv]
+[   15.005709]  kthread+0xf2/0x120
+[   15.005712]  ? __pfx_kthread+0x10/0x10
+[   15.005716]  ret_from_fork+0x47/0x70
+[   15.005717]  ? __pfx_kthread+0x10/0x10
+[   15.005721]  ret_from_fork_asm+0x1b/0x30
+[   15.005725]  </TASK>
+[   15.005726] ================================================================================
+[   15.005726] CPU: 10 PID: 1777 Comm: modprobe Tainted: G           OE      6.6.6-76060606-generic #202312111032~1702306143~22.04~d28ffec
+[   15.005729] Hardware name: HP Dev One Notebook PC/8A78, BIOS F.05 06/14/2022
+[   15.005730] Call Trace:
+[   15.005731]  <TASK>
+[   15.005732]  dump_stack_lvl+0x48/0x70
+[   15.005735]  dump_stack+0x10/0x20
+[   15.005738]  __ubsan_handle_out_of_bounds+0xc6/0x110
+[   15.005742]  VBoxHost_RTLogLoggerExV+0x418/0x5c0 [vboxdrv]
+[   15.005767]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005769]  ? vprintk_default+0x1d/0x30
+[   15.005773]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005775]  ? vprintk+0x42/0x80
+[   15.005778]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005780]  ? _printk+0x60/0x90
+[   15.005783]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005786]  VBoxHost_RTLogLoggerEx+0x51/0x80 [vboxdrv]
+[   15.005809]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005811]  ? VBoxHost_RTLogRelGetDefaultInstanceEx+0x9f/0xb0 [vboxdrv]
+[   15.005834]  VBoxNetFltLinuxInit+0x65/0xff0 [vboxnetflt]
+[   15.005838]  ? __pfx_VBoxNetFltLinuxInit+0x10/0x10 [vboxnetflt]
+[   15.005843]  do_one_initcall+0x5e/0x340
+[   15.005848]  do_init_module+0x97/0x290
+[   15.005850]  load_module+0xb85/0xcd0
+[   15.005854]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005856]  ? __vmalloc_node_range+0xda/0x220
+[   15.005858]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005860]  ? find_vmap_area+0x42/0x70
+[   15.005864]  __do_sys_init_module+0x1a7/0x1e0
+[   15.005866]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005868]  ? __do_sys_init_module+0x1a7/0x1e0
+[   15.005873]  __x64_sys_init_module+0x1a/0x30
+[   15.005875]  do_syscall_64+0x5b/0x90
+[   15.005878]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005880]  ? irqentry_exit_to_user_mode+0x17/0x20
+[   15.005882]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005884]  ? irqentry_exit+0x43/0x50
+[   15.005886]  ? srso_alias_return_thunk+0x5/0x7f
+[   15.005888]  ? exc_page_fault+0x94/0x1b0
+[   15.005891]  entry_SYSCALL_64_after_hwframe+0x6e/0xd8
+[   15.005893] RIP: 0033:0x75ce32b26bde
+[   15.005898] Code: 48 8b 0d 55 32 0f 00 f7 d8 64 89 01 48 83 c8 ff c3 66 2e 0f 1f 84 00 00 00 00 00 90 f3 0f 1e fa 49 89 ca b8 af 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 22 32 0f 00 f7 d8 64 89 01 48
+[   15.005900] RSP: 002b:00007ffc2ec15e38 EFLAGS: 00000246 ORIG_RAX: 00000000000000af
+[   15.005902] RAX: ffffffffffffffda RBX: 000061887ccbe220 RCX: 000075ce32b26bde
+[   15.005904] RDX: 000061887c458cd2 RSI: 00000000000125d8 RDI: 000075ce328e6010
+[   15.005905] RBP: 000075ce328e6010 R08: 000075ce3324b000 R09: 85ebca77c2b2ae63
+[   15.005906] R10: 000000000000046a R11: 0000000000000246 R12: 000061887c458cd2
+[   15.005908] R13: 000061887ccbe2a0 R14: 000061887ccbd4d0 R15: 000061887ccbe790
+[   15.005912]  </TASK>
+[   15.005950] ================================================================================
+[   15.005953] VBoxNetFlt: Successfully started.
+[   15.014229] VBoxNetAdp: Successfully started.
+[   15.081830] kauditd_printk_skb: 18 callbacks suppressed
+[   15.081833] audit: type=1400 audit(1705782634.603:30): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=1818 comm="apparmor_parser"
+[   15.289919] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   15.291728] Bridge firewalling registered
+[   15.388367] Initializing XFRM netlink socket
+[   16.170149] br-9c1a9ace2edc: port 1(vetha8402d8) entered blocking state
+[   16.170157] br-9c1a9ace2edc: port 1(vetha8402d8) entered disabled state
+[   16.170166] vetha8402d8: entered allmulticast mode
+[   16.170214] vetha8402d8: entered promiscuous mode
+[   16.170349] br-9c1a9ace2edc: port 1(vetha8402d8) entered blocking state
+[   16.170354] br-9c1a9ace2edc: port 1(vetha8402d8) entered forwarding state
+[   16.170633] br-9c1a9ace2edc: port 1(vetha8402d8) entered disabled state
+[   16.424777] eth0: renamed from veth5da18c1
+[   16.473270] br-9c1a9ace2edc: port 1(vetha8402d8) entered blocking state
+[   16.473279] br-9c1a9ace2edc: port 1(vetha8402d8) entered forwarding state
+[   16.877065] systemd-journald[93]: Received client request to flush runtime journal.
+[   27.750190] Invalid ELF header magic: != \x7fELF
+[   27.752787] Invalid ELF header magic: != \x7fELF
+[   27.754336] Invalid ELF header magic: != \x7fELF
+[   27.755856] Invalid ELF header magic: != \x7fELF
+[   49.806112] logitech-hidpp-device 0003:046D:4079.0008: HID++ 4.2 device connected.
+[   57.383125] rfkill: input handler enabled
+[   64.978006] rfkill: input handler disabled
+[   70.800106] warning: `ThreadPoolForeg' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+[ 1237.075753] veth5da18c1: renamed from eth0
+[ 1237.126235] br-9c1a9ace2edc: port 1(vetha8402d8) entered disabled state
+[ 1237.197447] br-9c1a9ace2edc: port 1(vetha8402d8) entered disabled state
+[ 1237.197846] vetha8402d8 (unregistering): left allmulticast mode
+[ 1237.197849] vetha8402d8 (unregistering): left promiscuous mode
+[ 1237.197852] br-9c1a9ace2edc: port 1(vetha8402d8) entered disabled state
+[ 1238.358731] br-9c1a9ace2edc: port 1(veth17f8c09) entered blocking state
+[ 1238.358736] br-9c1a9ace2edc: port 1(veth17f8c09) entered disabled state
+[ 1238.358743] veth17f8c09: entered allmulticast mode
+[ 1238.358811] veth17f8c09: entered promiscuous mode
+[ 1238.358931] br-9c1a9ace2edc: port 1(veth17f8c09) entered blocking state
+[ 1238.358935] br-9c1a9ace2edc: port 1(veth17f8c09) entered forwarding state
+[ 1238.359251] br-9c1a9ace2edc: port 1(veth17f8c09) entered disabled state
+[ 1238.574551] eth0: renamed from veth6a1cc4d
+[ 1238.611018] br-9c1a9ace2edc: port 1(veth17f8c09) entered blocking state
+[ 1238.611027] br-9c1a9ace2edc: port 1(veth17f8c09) entered forwarding state
+[ 1238.962838] systemd-journald[93]: Received client request to flush runtime journal.
+[ 1249.057894] Invalid ELF header magic: != \x7fELF
+[ 1249.060286] Invalid ELF header magic: != \x7fELF
+[ 1249.062490] Invalid ELF header magic: != \x7fELF
+[ 1249.064410] Invalid ELF header magic: != \x7fELF
+[ 5910.200325] rfkill: input handler enabled
+[ 5910.251159] fbcon: Taking over console
+[ 5911.313078] Console: switching to colour frame buffer device 240x67
+[ 6105.008006] rfkill: input handler disabled
+[ 6415.517950] usb 3-2: USB disconnect, device number 2
+[ 6419.319879] usb 3-2: new full-speed USB device number 4 using xhci_hcd
+[ 6419.499032] usb 3-2: New USB device found, idVendor=046d, idProduct=c53d, bcdDevice=43.01
+[ 6419.499041] usb 3-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 6419.499045] usb 3-2: Product: USB Receiver
+[ 6419.499048] usb 3-2: Manufacturer: Logitech
+[ 6419.517384] input: Logitech USB Receiver as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.0/0003:046D:C53D.0009/input/input41
+[ 6419.576498] hid-generic 0003:046D:C53D.0009: input,hidraw1: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:03:00.4-2/input0
+[ 6419.582312] input: Logitech USB Receiver Mouse as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.000A/input/input42
+[ 6419.582456] input: Logitech USB Receiver Consumer Control as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.000A/input/input43
+[ 6419.644086] input: Logitech USB Receiver System Control as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.000A/input/input44
+[ 6419.644286] hid-generic 0003:046D:C53D.000A: input,hiddev0,hidraw2: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:03:00.4-2/input1
+[ 6419.648598] hid-generic 0003:046D:C53D.000B: hiddev1,hidraw3: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:03:00.4-2/input2
+[30581.713147] audit: type=1400 audit(1705813201.587:31): apparmor="DENIED" operation="capable" class="cap" profile="/usr/sbin/cupsd" pid=26443 comm="cupsd" capability=12  capname="net_admin"
+[71214.548454] usb 3-2: USB disconnect, device number 4
+[75532.095095] usb 3-2: new full-speed USB device number 5 using xhci_hcd
+[75532.270317] usb 3-2: New USB device found, idVendor=046d, idProduct=c53d, bcdDevice=43.01
+[75532.270326] usb 3-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[75532.270330] usb 3-2: Product: USB Receiver
+[75532.270333] usb 3-2: Manufacturer: Logitech
+[75532.287663] input: Logitech USB Receiver as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.0/0003:046D:C53D.000C/input/input46
+[75532.347817] hid-generic 0003:046D:C53D.000C: input,hidraw1: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:03:00.4-2/input0
+[75532.352724] input: Logitech USB Receiver Mouse as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.000D/input/input47
+[75532.352954] input: Logitech USB Receiver Consumer Control as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.000D/input/input48
+[75532.411294] input: Logitech USB Receiver System Control as /devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-2/3-2:1.1/0003:046D:C53D.000D/input/input49
+[75532.411498] hid-generic 0003:046D:C53D.000D: input,hiddev0,hidraw2: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:03:00.4-2/input1
+[75532.415719] hid-generic 0003:046D:C53D.000E: hiddev1,hidraw3: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:03:00.4-2/input2
