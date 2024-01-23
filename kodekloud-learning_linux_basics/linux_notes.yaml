@@ -58,6 +58,103 @@ Linux Notes:
 
     df -hP: prints out all the mounted file systems
 
+  File Commands: 
+
+    du -sk <file>: displays size of file in kilobytes
+    du -sh <file>: displays in "human" readable 
+    ls -lh <file>: does the same with "long list" command
+
+    tar -cf test.tar file1 file2 file3: Tape Archive command, creates tarball from listed files
+    tar flags:
+      -c  test.tar: creates Archive
+      -f  test.tar: name of file 
+      -tf test.tar: see contents of tarball
+      -xf test.tar: extracts tarball
+      -z  test.tar: compresses tarball to decrease size ex. `tar -zcf my.tar file1 file2 file3`
+
+    Compression:
+
+      bzip2:    bzip2 test.img > test.img.bz2
+      bunzip2:  unzips
+
+      gzip:     gzip test.img  > test.img.gz
+      gunzip:   unzips
+
+      xz:       xz test.img    > test.img.xz
+      unxz:     unzips
+
+      zcat / bzcat / xzcat: tools that allow reading compressed files
+
+    Searching:
+
+      locate file.ext: finds all paths with name
+      updatedb: updates database used by `locate`
+
+      find: find <dir-to-search> -name <file-name>
+
+      grep: grep <search> <file-name>
+      grep flags:
+        -i: case insensitive
+        -r: recursive thru files
+        -v: lists all lines in file that DO NOT contain given search pattern
+        -w: search for whole word only (not substrings of larger word)
+        -A: after pattern lines eg. grep -A1 <pattern> <file> = prints pattern line and line after
+        -B: before pattern lines eg. grep -B1 <pattern> <file> = prints pattern line and line before
+
+      IO Redirection:
+
+        3 streams:
+
+          stdin : Standard input
+          stdout: Standard output
+          stderr: Standard error
+
+        Redirect stdout:
+          echo ${SHELL} > shell.txt : Creates/overwrrites file 
+          echo ${SHELL} >> shell.txt: Creates/Appends file 
+        
+        Redirect stderr: 
+          cat missing_file 2> error.txt : 2> redirects error and creates/overwrites file
+          cat missing_file 2>> error.txt: 2>> redirects error and creates/appends file
+          cat missing_file 2> /dev/null : doesn't print error in console ( /dev/null is referred to as the "bit bucket", the garbage can of the command line )
+
+        Pipes: 
+          command 1 | command 2: allows command 1 stdout to be stdin for command 2
+          echo $VAR | tee v.txt: tee redirects output to a file but also prints to console (so does both print and save)
+          tee -a: appends instead of overwrite
+
+      Vi Editor:
+
+        Open: vi /home/text.file
+        
+        3 modes:
+
+          Command Mode  : opens file in this mode, understands commands 
+          actions:
+            copy  : y y
+            paste : p
+            delete: x
+            cut line: d d (or d 3 d for 3 lines)
+            undo: u 
+            redo: ctr+r
+            search: /pattern
+            next:     n
+            previous: N
+
+
+          Insert Mode   : type "i" to enter insert mode, hit 'esc' to return to command mode (can also use A I O a o)
+          actionz:
+            edit    :
+            add     : 
+            remove  :
+
+          Last Line Mode: type ":" to enter last line mode, hit 'esc' to return to command mode
+          actionsz: 
+            save    : ":w"
+            discard : ":q"
+            save and exit vi : ":wq"
+            quit force: ":q!"
+ 
   Linux Boot Sequence:
 
     1. BIOS POST (Power-On Self Test): BIOS runs POST test to assure hardware works and functioning correctly
@@ -228,3 +325,73 @@ Linux Notes:
     RHEL: Enterprise Offering, Paid Version, Technical Support
 
     Centos: Community Version of RHEL, Free Version, Community Support
+
+  DNS: 
+    def: Domain Name System 
+
+    dig: linux cli tool that gets DNS information
+    nslookup: another DNS tool
+
+    /etc/hosts:
+      host name: /etc/hosts has pairings of IP DNS name 
+      example: "192.168.1.11   db"
+
+      approach: This works for small networks, but with more hosts, it's better to point at a company DNS server that manages all IP>hostname combos
+
+    /etc/resolv.conf:
+      nameserver: this file has pairing of nameserver and IP of DNS server
+      example: "nameserver   192.168.1.100"
+      notes: There can be more than one nameserver listed in the file
+
+      approach: if host is not in /etc/hosts it checks with this nameserver to resolve the hostname to an IP
+      order: if hostnames are both in local /etc/hosts and remote DNS nameserver, local will win by default (determined by nsswitch.conf)
+
+      search appending example: "search   mycompany.com"
+      meaning: This will append the search phrase to the end of short dns names 
+      for example: ping web -> pings web.mycompany.com (which is the actual entry in the remote DNS server)
+
+      also: the search part of the file can have multiple phrases, mycompany.com prod.mycompany.com etc. 
+    
+    /etc/nsswitch.conf:
+      order: this file determines which resolution you will get, local or remote
+      example entry: "hosts:   files dns"
+      meaning: This means it will check locally first (files means /etc/hosts), and then the remote DNS server specified in /etc/resolv.conf
+
+    DNS Server:
+      hosts: nameserver can specify resoltions or forward to other known nameservers like Google's 8.8.8.8
+
+      Domain Names: 
+        http://www.google.com: the example
+        root: . <- where everything starts
+        top-level-domain:
+        - .com
+        - .net
+        - .edu
+        - .org
+        - .io
+        domain-name:
+        - google 
+        subdomain:
+        - www
+        - mail
+        - maps
+        - drive 
+        protocol: 
+        - http(s) 
+        - ftp 
+
+        Tracing DNS: 
+          0. Want to visit apps.google.com
+          1. Request checks with internal DNS server 
+          2. Root DNS server sees .com and routes to .com DNS server  
+          3. .com DNS server sees google and routes to google DNS server 
+          4. google DNS server resolves subdomain IP
+
+        Cache: To speed this up later, the internal DNS server may cache this result locally
+
+    Record Types: 
+      def: how records are stored in the DNS server 
+
+      A:      hostname to IP        -> web-server       192.168.1.1
+      AAAA:   IPv6 hostname to IP   -> web-server       2001:0dasf:6542:0000:0000:134:1324:1324
+      CNAME:  hostname to hostname  -> food.web-server  eat.web-server, hungry.web-server
