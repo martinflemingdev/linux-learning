@@ -395,3 +395,28 @@ Linux Notes:
       A:      hostname to IP        -> web-server       192.168.1.1
       AAAA:   IPv6 hostname to IP   -> web-server       2001:0dasf:6542:0000:0000:134:1324:1324
       CNAME:  hostname to hostname  -> food.web-server  eat.web-server, hungry.web-server
+
+  Networking Basics:
+
+    Switching: 
+      Switch: Creates network between 2 systems when both are connected to a switch 
+      Interface: required on each host to connect to switch (physical or virtual)
+      \`ip link`: list and modify interfaces on the host
+      \`ip link set dev eth0 up`: sets "state" of interface to "UP" (if it was "DOWN" for example)
+      \`ip addr`: see IP addresses assigned to those interfaces
+      \`ip addr add 192.168.1.10/24 dev eth0`: command that assigns IP address to `eth0` interface (dev = device)
+      persist changes: Set these in /etc/network/interfaces
+
+    Routing: 
+      Router: Inteligent device that connects 2 networks (via the switches) 
+      IPs: It get assigned 2 IPs, one for each network
+      \`route`: command that displays the kernel's routing table
+      \`ip route add 192.168.2.0/24 via 192.168.1.1`: command that adds a route to allow network A (where command is exectured) to connect to network B (ip/24 given) via the Router's IP (..1.1) 
+      \`ip route del default`: deletes route from table
+      Gateway: The Router's IP in the network (the `door` to other networks)
+      Default Gateway: use command `ip route add default via 192.168.1.1` to add a default Gateway to use when route is not in routing table
+      0.0.0.0/0: instead of `default`, we could also use `0.0.0.0/0`
+      \'telnet <hostname/IP> <port': attemps to connect to host/IP on given port (different than ping because ping only checks network IP level, not port)
+      \`traceroute 192.168.2.5`: shows the hops on the way to the target IP
+
+      netstat: shows active internet connections and active unix domain sockets w/o servers on host
